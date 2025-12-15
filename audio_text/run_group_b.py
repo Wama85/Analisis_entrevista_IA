@@ -60,7 +60,7 @@ def main():
     result = run(args.video, args.out, args.whisper_model, args.lang)
 
     # Short console summary
-    print("\n✅ Grupo B ejecutado correctamente")
+    print("\n Grupo B ejecutado correctamente")
     print(f"Texto (primeros 200 chars): {result['transcription']['text'][:200]!r}")
     top3 = sorted(result["text_emotion"].items(), key=lambda x: x[1], reverse=True)[:3]
     print("Top-3 emociones (texto):", top3)

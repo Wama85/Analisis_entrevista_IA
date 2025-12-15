@@ -1,0 +1,23 @@
+# Requisitos para el Proyecto de Reconocimiento de Emociones Faciales
+
+# Procesamiento de video e imágenes
+opencv-python==4.8.1.78
+opencv-contrib-python==4.8.1.78
+
+# DeepFace - Framework para análisis facial
+deepface==0.0.79
+
+# Frameworks de Deep Learning (DeepFace los necesita)
+tensorflow==2.15.0
+
+# Visualización
+matplotlib==3.8.2
+
+# Procesamiento numérico
+numpy==1.24.3
+
+# Utilidades
+pillow==10.1.0
+
+# Opcional: Para mejor rendimiento con GPU
+# tensorflow-gpu==2.15.0

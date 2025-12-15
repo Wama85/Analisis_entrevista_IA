@@ -1,0 +1,127 @@
+╔══════════════════════════════════════════════════════════════╗
+║  🎭 GUÍA DE INICIO RÁPIDO - DETECTOR DE EMOCIONES           ║
+╚══════════════════════════════════════════════════════════════╝
+
+📋 PASOS PARA EMPEZAR:
+
+1️⃣  INSTALACIÓN (Primera vez solamente)
+   
+   Abre una terminal/consola en la carpeta del proyecto y ejecuta:
+   
+   pip install -r requirements.txt
+   
+   ⏱️ Esto tomará unos minutos (descarga TensorFlow y otras librerías)
+
+2️⃣  PREPARAR VIDEO DE PRUEBA
+
+   Opción A - Tienes un video:
+   • Copia tu video a esta carpeta
+   • Renómbralo como "video_prueba.mp4"
+   
+   Opción B - Grabar nuevo video:
+   • Ejecuta: python create_test_video.py
+   • Elige opción 1 (webcam) o 2 (sintético)
+   
+   Opción C - Usar webcam directamente:
+   • Salta al paso 3, opción 2
+
+3️⃣  EJECUTAR DETECTOR
+
+   Opción 1 - Analizar video:
+   python emotion_detection.py
+   
+   Opción 2 - Detección en tiempo real (webcam):
+   python emotion_detection_realtime.py
+   
+   Opción 3 - Análisis de evolución temporal:
+   python emotion_evolution_analyzer.py
+
+4️⃣  VER RESULTADOS
+
+   Los archivos generados aparecerán en esta carpeta:
+   • resultado_emociones.jpg (análisis simple)
+   • evolucion_emociones.png (análisis temporal)
+   • reporte_emociones.txt (estadísticas)
+
+╔══════════════════════════════════════════════════════════════╗
+║  ⚡ QUICK START (Más rápido)                                ║
+╚══════════════════════════════════════════════════════════════╝
+
+Si quieres probarlo YA con tu webcam:
+
+pip install -r requirements.txt
+python emotion_detection_realtime.py
+
+¡Eso es todo! Verás la detección en vivo 🎥
+
+╔══════════════════════════════════════════════════════════════╗
+║  🐛 SOLUCIÓN DE PROBLEMAS                                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+❌ Error: "No se pudo abrir el video"
+   → Verifica que "video_prueba.mp4" exista en la carpeta
+
+❌ Error: "No module named 'cv2'"
+   → Ejecuta: pip install opencv-python
+
+❌ Error: "No module named 'deepface'"
+   → Ejecuta: pip install deepface
+
+❌ La detección es muy lenta
+   → Normal en la primera ejecución (descarga modelos)
+   → Después será más rápido
+
+❌ No detecta mi rostro
+   → Asegura buena iluminación
+   → Mira de frente a la cámara
+   → Acércate más a la cámara
+
+╔══════════════════════════════════════════════════════════════╗
+║  📚 DOCUMENTACIÓN COMPLETA                                  ║
+╚══════════════════════════════════════════════════════════════╝
+
+Lee README.md para información detallada sobre:
+• Arquitectura del sistema
+• Explicación de cada script
+• Optimización y configuración
+• Referencias técnicas
+
+╔══════════════════════════════════════════════════════════════╗
+║  🎯 OBJETIVOS DEL PROYECTO                                  ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ Cargar un video
+✅ Extraer frames
+✅ Pasar un frame por DeepFace
+✅ Mostrar emoción detectada
+
+¡Todo implementado! 🎉
+
+╔══════════════════════════════════════════════════════════════╗
+║  💡 CONSEJOS ÚTILES                                         ║
+╚══════════════════════════════════════════════════════════════╝
+
+• Para analizar un frame específico, edita emotion_detection.py:
+  frame_number = 30  # Cambia este número
+
+• Para analizar más frames, edita emotion_evolution_analyzer.py:
+  analyzer.analyze_frames(num_frames=20)  # Más frames = más tiempo
+
+• La primera ejecución es lenta porque descarga los modelos
+  preentrenados. Las siguientes serán mucho más rápidas.
+
+• Los modelos se guardan automáticamente en:
+  ~/.deepface/weights/
+
+╔══════════════════════════════════════════════════════════════╗
+║  📞 NECESITAS AYUDA?                                        ║
+╚══════════════════════════════════════════════════════════════╝
+
+1. Revisa README.md (documentación completa)
+2. Verifica que todas las dependencias estén instaladas
+3. Consulta la documentación oficial de DeepFace:
+   https://github.com/serengil/deepface
+
+═══════════════════════════════════════════════════════════════
+
+¡Feliz detección de emociones! 🎭✨

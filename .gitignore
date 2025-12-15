@@ -2,3 +2,6 @@
 outputs/
 */__pycache__/
 output_frames_dia1/
+# Entornos virtuales
+.env
+.venv

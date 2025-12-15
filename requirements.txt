@@ -1,8 +1,16 @@
-openai-whisper
+# Core Deep Learning
 torch
 torchaudio
 transformers
+openai-whisper
+
+# Video / Audio
+opencv-python
+deepface
+librosa
+moviepy
+
+# Data / análisis
 numpy
 pandas
-moviepy
-tf-keras
+matplotlib

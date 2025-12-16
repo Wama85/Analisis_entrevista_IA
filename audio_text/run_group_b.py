@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 
 def run(video_path: str, out_dir: str, whisper_model: str, language: str) -> Dict[str, Any]:
-    logger.info("Iniciando ejecución del pipeline Grupo B")
+    logger.info("Iniciando la ejecución del pipeline Grupo B")
 
     outp = Path(out_dir)
     outp.mkdir(parents=True, exist_ok=True)
@@ -33,13 +33,13 @@ def run(video_path: str, out_dir: str, whisper_model: str, language: str) -> Dic
     json_path = str(outp / "group_b_output.json")
 
     # 1) Extract audio
-    logger.info("Extrayendo audio desde el video")
-    logger.debug(f"Video de entrada: {video_path}")
+    logger.info("Aquí se esta extrayendo el audio desde el video")
+    logger.debug(f"Este es el video de entrada: {video_path}")
     extract_audio(video_path, wav_path, sr=16000)
-    logger.info(f"Audio extraído correctamente: {wav_path}")
+    logger.info(f"Audio extraído de manera correcta: {wav_path}")
 
     # 2) Transcribe
-    logger.info("Iniciando transcripción de audio")
+    logger.info("Iniciando la transcripción del audio")
     logger.debug(f"Modelo Whisper: {whisper_model} | Idioma: {language}")
     tr = transcribe_audio(wav_path, model_size=whisper_model, language=language)
     text = tr["text"]
@@ -47,7 +47,7 @@ def run(video_path: str, out_dir: str, whisper_model: str, language: str) -> Dic
     logger.debug(f"Texto transcrito (longitud): {len(text)} caracteres")
 
     # 3) Emotion from text
-    logger.info("Iniciando análisis emocional del texto")
+    logger.info("Iniciando la parte de análisis emocional del texto")
     logger.warning(
         "El modelo de emociones utilizado está entrenado en inglés. "
         "Para mejores resultados en español se recomienda un modelo multilingüe."
@@ -55,8 +55,8 @@ def run(video_path: str, out_dir: str, whisper_model: str, language: str) -> Dic
 
     clf = build_emotion_classifier()
     text_emotions = predict_text_emotions(clf, text)
-    logger.info("Análisis emocional finalizado")
-    logger.debug(f"Emociones detectadas: {text_emotions}")
+    logger.info("Análisis emocional ha finalizado con éxito")
+    logger.debug(f"Las emociones detectadas son: {text_emotions}")
 
     output = {
         "input": {

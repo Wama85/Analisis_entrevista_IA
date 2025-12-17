@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+from datetime import datetime
 import argparse
 import json
 import logging
@@ -61,12 +61,14 @@ def run(
         language: str,
         make_plot: bool = True
 ) -> Dict[str, Any]:
-    logger.info("Iniciando la ejecución del pipeline Grupo B")
+    logger.info("Iniciando la ejecución del pipeline")
 
     outp = Path(out_dir)
     outp.mkdir(parents=True, exist_ok=True)
 
-    wav_path = str(outp / "audio.wav")
+    video_name = Path(video_path).stem
+    run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+    wav_path = str(outp / f"{video_name}_{run_id}.wav")
 
     # JSON distinto por cada video
     video_name = Path(video_path).stem

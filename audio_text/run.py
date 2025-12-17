@@ -68,9 +68,9 @@ def run(
 
     wav_path = str(outp / "audio.wav")
 
-    # ✅ JSON distinto por cada video
+    # JSON distinto por cada video
     video_name = Path(video_path).stem
-    json_path = str(outp / f"{video_name}_group_b.json")
+    json_path = str(outp / f"{video_name}_text_audio.json")
 
     # 1) Extract audio
     logger.info("Aquí se esta extrayendo el audio desde el video")
@@ -112,7 +112,7 @@ def run(
             "emotions": emotions,
         })
 
-    # ✅ SUMMARY GLOBAL (extra)
+    # SUMMARY GLOBAL (extra)
     emotion_accumulator = defaultdict(float)
     segment_count = 0
     duration_seconds = 0.0
@@ -135,7 +135,7 @@ def run(
         if emotion_distribution else None
     )
 
-    # ✅ JSON con estructura (incluye timestamps en cada segmento)
+    # JSON con estructura (incluye timestamps en cada segmento)
     output = {
         "video": {
             "path": video_path,
@@ -143,8 +143,8 @@ def run(
         },
         "transcription": {
             "language": tr.get("language"),
-            "text": text_full,  # 👈 mantenemos también el texto completo
-            "segments": segments_with_emotions,  # 👈 con timestamps + emociones
+            "text": text_full,
+            "segments": segments_with_emotions,  # con timestamps + emociones
         },
         "summary": {
             "duration_seconds": round(duration_seconds, 2),
@@ -159,9 +159,9 @@ def run(
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    logger.info("Ejecución del pipeline Grupo B finalizada correctamente")
+    logger.info("Ejecución del pipeline finalizada correctamente")
 
-    # ✅ Gráfica (extra)
+    #  Gráfica (extra)
     if make_plot:
         plot_emotions_over_time(segments_with_emotions)
 
@@ -169,7 +169,7 @@ def run(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Grupo B: Audio -> Whisper -> Text Emotion")
+    parser = argparse.ArgumentParser(description=" Audio -> Whisper -> Text Emotion")
     parser.add_argument("--video", required=True, help="Path to input interview video (.mp4/.avi)")
     parser.add_argument("--out", default="outputs/audio_text", help="Output directory")
     parser.add_argument(
@@ -187,7 +187,7 @@ def main():
 
     result = run(args.video, args.out, args.whisper_model, args.lang, make_plot=(not args.no_plot))
 
-    # ✅ PRINTS ORIGINALES (NO SE TOCAN)
+    # PRINTS ORIGINALES (NO SE TOCAN)
     print("\n Ejecutado correctamente")
     print(f"Texto (primeros 200 chars): {result['transcription']['text'][:200]!r}")
 

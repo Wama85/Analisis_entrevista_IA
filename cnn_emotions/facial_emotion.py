@@ -1,18 +1,16 @@
 """
-Análisis de Emociones Frame por Frame - Anotación Directa
-==========================================================
-Extrae frames de videos y MIENTRAS los extrae, analiza las emociones
-y dibuja los recuadros directamente en los frames.
+Análisis de Emociones Frame por Frame - Versión Optimizada para Videos Completos
+==================================================================================
+Procesa TODO el video de manera eficiente con límite de tiempo/frames.
 
-FLUJO:
-1. Extraer frame del video
-2. Analizar emoción en ese frame
-3. Dibujar recuadro y emoción
-4. Guardar frame YA ANOTADO
-5. Continuar con siguiente frame
+MEJORAS:
+- Procesa TODO el video (no solo primeros segundos)
+- Muestreo inteligente para mantener tiempo < 5 minutos
+- Estimación de tiempo de procesamiento
+- Opción de límite por frames totales o fps
 
 Autor: Sistema de Reconocimiento Facial
-Fecha: 15 de diciembre, 2025
+Fecha: 17 de diciembre, 2025
 """
 
 import cv2
@@ -24,6 +22,7 @@ from typing import List, Dict, Any, Optional
 from pathlib import Path
 from datetime import datetime
 import numpy as np
+import time
 
 def convertir_a_tipo_nativo(obj):
     """
@@ -75,7 +74,9 @@ class AnalizadorEmociones:
             'frames_con_rostros': 0,
             'frames_sin_rostros': 0,
             'rostros_totales': 0,
-            'errores': []
+            'errores': [],
+            'tiempo_total': 0,
+            'tiempo_promedio_por_frame': 0
         }
 
         # Contadores de emociones
@@ -117,7 +118,6 @@ class AnalizadorEmociones:
         frame_anotado = frame.copy()
 
         for rostro in rostros_info:
-            # Obtener región del rostro
             region = rostro.get('region', {})
             if not region:
                 continue
@@ -127,54 +127,43 @@ class AnalizadorEmociones:
             w = int(region.get('w', 0))
             h = int(region.get('h', 0))
 
-            # Obtener emoción
             emocion = rostro.get('emocion_dominante', 'unknown')
             edad = rostro.get('edad', 0)
             genero = rostro.get('genero', 'unknown')
 
-            # Obtener probabilidad de la emoción
             emociones = rostro.get('emociones', {})
             probabilidad = emociones.get(emocion, 0)
 
-            # Color según la emoción
             color = self.colores_emociones.get(emocion, (255, 255, 255))
 
-            # Dibujar rectángulo alrededor del rostro
             cv2.rectangle(frame_anotado, (x, y), (x+w, y+h), color, 3)
 
-            # Preparar texto con la información
             texto_emocion = f"{emocion.upper()}"
             texto_prob = f"{probabilidad:.1f}%"
             texto_info = f"{genero}, {edad}a"
 
-            # Calcular tamaño del texto
             (tw1, th1), _ = cv2.getTextSize(texto_emocion, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2)
             (tw2, th2), _ = cv2.getTextSize(texto_prob, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)
             (tw3, th3), _ = cv2.getTextSize(texto_info, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)
 
-            # Dibujar fondo negro para el texto
             padding = 5
             cv2.rectangle(frame_anotado,
                           (x, y - th1 - th2 - th3 - padding*3),
                           (x + max(tw1, tw2, tw3) + padding*2, y),
                           (0, 0, 0), -1)
 
-            # Escribir texto de emoción
             cv2.putText(frame_anotado, texto_emocion,
                         (x + padding, y - th2 - th3 - padding*2),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
 
-            # Escribir probabilidad
             cv2.putText(frame_anotado, texto_prob,
                         (x + padding, y - th3 - padding),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
 
-            # Escribir información adicional
             cv2.putText(frame_anotado, texto_info,
                         (x + padding, y - padding),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200, 200, 200), 1)
 
-            # Dibujar punto en el centro del rostro
             centro_x = x + w // 2
             centro_y = y + h // 2
             cv2.circle(frame_anotado, (centro_x, centro_y), 3, color, -1)
@@ -201,11 +190,9 @@ class AnalizadorEmociones:
         }
 
         try:
-            # Guardar temporalmente el frame para análisis
             temp_path = self.frames_dir / f"temp_{frame_count}.jpg"
             cv2.imwrite(str(temp_path), frame)
 
-            # Analizar con DeepFace
             analisis = DeepFace.analyze(
                 img_path=str(temp_path),
                 actions=['emotion', 'age', 'gender'],
@@ -213,10 +200,8 @@ class AnalizadorEmociones:
                 silent=True
             )
 
-            # Eliminar archivo temporal
             temp_path.unlink()
 
-            # Procesar resultados
             if isinstance(analisis, list):
                 resultados_lista = analisis
             else:
@@ -237,12 +222,10 @@ class AnalizadorEmociones:
 
                 resultado['rostros'].append(info_rostro)
 
-                # Actualizar contador de emociones
                 emocion = info_rostro['emocion_dominante']
                 if emocion in self.emociones_contador:
                     self.emociones_contador[emocion] += 1
 
-            # Actualizar estadísticas
             if resultado['num_rostros'] > 0:
                 self.stats['frames_con_rostros'] += 1
                 self.stats['rostros_totales'] += resultado['num_rostros']
@@ -256,46 +239,85 @@ class AnalizadorEmociones:
 
         return resultado
 
-    def extraer_frames_con_emociones(self, ruta_video: str, fps_extraccion: Optional[int] = None) -> bool:
+    def extraer_frames_con_emociones(
+        self, 
+        ruta_video: str, 
+        max_frames: Optional[int] = None,
+        fps_extraccion: Optional[float] = None,
+        max_minutos: float = 5.0
+    ) -> bool:
         """
-        Extrae frames del video y DIRECTAMENTE los analiza y anota con emociones
+        Extrae frames del video y los analiza con emociones.
+        VERSIÓN MEJORADA: Procesa TODO el video con límites inteligentes.
 
         Args:
             ruta_video: Ruta al archivo de video
-            fps_extraccion: Frames por segundo a extraer (None = todos los frames)
+            max_frames: Número máximo de frames a procesar (None = usar fps_extraccion o max_minutos)
+            fps_extraccion: Frames por segundo a extraer (None = calcular basado en max_minutos)
+            max_minutos: Tiempo máximo de procesamiento en minutos (default: 5)
 
         Returns:
             bool: True si exitoso, False si error
         """
-        logging.info(f"Iniciando extracción y análisis de frames desde: {ruta_video}")
+        logging.info(f"🎬 Iniciando análisis de video completo: {ruta_video}")
 
         cap = cv2.VideoCapture(str(ruta_video))
 
         if not cap.isOpened():
-            logging.error(f"Error: No se pudo abrir el video en {ruta_video}")
+            logging.error(f"❌ Error: No se pudo abrir el video")
             return False
 
         # Obtener información del video
         fps_original = cap.get(cv2.CAP_PROP_FPS)
-        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-        duracion = total_frames / fps_original if fps_original > 0 else 0
+        total_frames_video = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        duracion = total_frames_video / fps_original if fps_original > 0 else 0
 
-        logging.info(f"Video - FPS: {fps_original:.2f}, Frames: {total_frames}, Duración: {duracion:.2f}s")
+        logging.info(f"📊 Información del video:")
+        logging.info(f"   FPS: {fps_original:.2f}")
+        logging.info(f"   Frames totales: {total_frames_video}")
+        logging.info(f"   Duración: {duracion:.2f} segundos")
 
-        # Calcular intervalo de extracción
-        if fps_extraccion is not None:
-            frame_interval = int(fps_original / fps_extraccion)
-            if frame_interval < 1:
-                frame_interval = 1
-            logging.info(f"Extrayendo 1 frame cada {frame_interval} frames ({fps_extraccion} fps)")
+        # Calcular estrategia de muestreo
+        if max_frames is not None:
+            # Opción 1: Límite por frames
+            frames_a_procesar = min(max_frames, total_frames_video)
+            frame_interval = max(1, total_frames_video // frames_a_procesar)
+            logging.info(f"\n⚙️  Modo: Límite por frames")
+            logging.info(f"   Frames a procesar: {frames_a_procesar}")
+            
+        elif fps_extraccion is not None:
+            # Opción 2: FPS específico
+            frame_interval = max(1, int(fps_original / fps_extraccion))
+            frames_a_procesar = total_frames_video // frame_interval
+            logging.info(f"\n⚙️  Modo: FPS de extracción")
+            logging.info(f"   FPS extracción: {fps_extraccion}")
+            logging.info(f"   Frames a procesar: ~{frames_a_procesar}")
+            
         else:
-            frame_interval = 1
-            logging.info("Extrayendo todos los frames")
+            # Opción 3: Basado en tiempo máximo
+            tiempo_por_frame = 1.5  # segundos (estimación conservadora)
+            max_segundos = max_minutos * 60
+            frames_a_procesar = int(max_segundos / tiempo_por_frame)
+            frames_a_procesar = min(frames_a_procesar, total_frames_video)
+            frame_interval = max(1, total_frames_video // frames_a_procesar)
+            
+            logging.info(f"\n⚙️  Modo: Límite por tiempo")
+            logging.info(f"   Tiempo máximo: {max_minutos} minutos")
+            logging.info(f"   Frames a procesar: ~{frames_a_procesar}")
 
-        logging.info("✨ Analizando y anotando emociones en tiempo real...")
+        logging.info(f"   Intervalo de frames: cada {frame_interval} frames")
+        
+        # Estimación de tiempo
+        tiempo_estimado = frames_a_procesar * 1.5 / 60  # minutos
+        logging.info(f"   ⏱️  Tiempo estimado: {tiempo_estimado:.1f} minutos")
+        logging.info(f"   📍 Cobertura: TODO el video ({duracion:.1f}s)")
 
+        logging.info("\n✨ Iniciando análisis...")
+        
+        inicio_total = time.time()
         frame_count = 0
         extracted_count = 0
+        tiempos_procesamiento = []
 
         while True:
             ret, frame = cap.read()
@@ -303,8 +325,10 @@ class AnalizadorEmociones:
             if not ret:
                 break
 
-            # Extraer frame según el intervalo
+            # Muestreo uniforme a lo largo de TODO el video
             if frame_count % frame_interval == 0:
+                inicio_frame = time.time()
+                
                 # 1. Analizar el frame
                 analisis = self.analizar_y_anotar_frame(frame, extracted_count)
 
@@ -320,55 +344,72 @@ class AnalizadorEmociones:
                 analisis['frame_path'] = str(nombre_frame)
                 self.todos_los_analisis.append(analisis)
 
+                # Timing
+                tiempo_frame = time.time() - inicio_frame
+                tiempos_procesamiento.append(tiempo_frame)
+
                 extracted_count += 1
 
+                # Progreso cada 10 frames
                 if extracted_count % 10 == 0:
-                    logging.info(f"  Procesados: {extracted_count} frames ({self.stats['frames_con_rostros']} con rostros)")
+                    progreso = (frame_count / total_frames_video) * 100
+                    tiempo_transcurrido = (time.time() - inicio_total) / 60
+                    tiempo_promedio = sum(tiempos_procesamiento) / len(tiempos_procesamiento)
+                    frames_restantes = frames_a_procesar - extracted_count
+                    tiempo_restante = (frames_restantes * tiempo_promedio) / 60
+                    
+                    logging.info(
+                        f"   📊 Progreso: {progreso:.1f}% | "
+                        f"Frames: {extracted_count}/{frames_a_procesar} | "
+                        f"Tiempo: {tiempo_transcurrido:.1f}min | "
+                        f"Restante: ~{tiempo_restante:.1f}min"
+                    )
 
             frame_count += 1
 
         cap.release()
+        
+        tiempo_total = (time.time() - inicio_total) / 60
+        
         self.stats['frames_totales'] = extracted_count
+        self.stats['tiempo_total'] = tiempo_total
+        self.stats['tiempo_promedio_por_frame'] = sum(tiempos_procesamiento) / len(tiempos_procesamiento) if tiempos_procesamiento else 0
 
-        logging.info(f"\n✓ Extracción y análisis completados")
-        logging.info(f"  Total frames: {extracted_count}")
-        logging.info(f"  Con rostros: {self.stats['frames_con_rostros']}")
-        logging.info(f"  Sin rostros: {self.stats['frames_sin_rostros']}")
+        logging.info(f"\n✅ Análisis completado!")
+        logging.info(f"   Frames procesados: {extracted_count}")
+        logging.info(f"   Con rostros: {self.stats['frames_con_rostros']}")
+        logging.info(f"   Sin rostros: {self.stats['frames_sin_rostros']}")
+        logging.info(f"   ⏱️  Tiempo total: {tiempo_total:.2f} minutos")
+        logging.info(f"   ⏱️  Promedio por frame: {self.stats['tiempo_promedio_por_frame']:.2f} segundos")
 
         return True
 
     def generar_reporte_json(self, nombre_archivo: str = 'emotion_analysis_report.json'):
         """
         Genera un reporte JSON completo con todos los resultados
-
-        Args:
-            nombre_archivo: Nombre del archivo de reporte
         """
-        # Calcular estadísticas adicionales
         if self.stats['frames_con_rostros'] > 0:
             promedio_rostros = self.stats['rostros_totales'] / self.stats['frames_con_rostros']
         else:
             promedio_rostros = 0
 
-        # Encontrar emoción más común
         if sum(self.emociones_contador.values()) > 0:
-            emocion_mas_comun = max(self.emociones_contador.items(),
-                                    key=lambda x: x[1])
+            emocion_mas_comun = max(self.emociones_contador.items(), key=lambda x: x[1])
         else:
             emocion_mas_comun = ('unknown', 0)
 
-        # Estructura del reporte
         reporte = {
             'fecha_analisis': datetime.now().isoformat(),
             'resumen': {
                 'frames_totales': int(self.stats['frames_totales']),
-
                 'frames_con_rostros': int(self.stats['frames_con_rostros']),
                 'frames_sin_rostros': int(self.stats['frames_sin_rostros']),
                 'rostros_totales_detectados': int(self.stats['rostros_totales']),
                 'promedio_rostros_por_frame': float(round(promedio_rostros, 2)),
                 'emocion_mas_comun': str(emocion_mas_comun[0]),
-                'frecuencia_emocion_mas_comun': int(emocion_mas_comun[1])
+                'frecuencia_emocion_mas_comun': int(emocion_mas_comun[1]),
+                'tiempo_procesamiento_minutos': float(round(self.stats['tiempo_total'], 2)),
+                'tiempo_promedio_por_frame_segundos': float(round(self.stats['tiempo_promedio_por_frame'], 2))
             },
             'distribucion_emociones': {k: int(v) for k, v in self.emociones_contador.items()},
             'porcentaje_emociones': {k: float(v) for k, v in self._calcular_porcentajes_emociones().items()},
@@ -383,15 +424,13 @@ class AnalizadorEmociones:
             }
         }
 
-        # Convertir reporte completo antes de guardar
         reporte = convertir_a_tipo_nativo(reporte)
 
-        # Guardar reporte
         ruta_reporte = self.reports_dir / nombre_archivo
         with open(ruta_reporte, 'w', encoding='utf-8') as f:
             json.dump(reporte, f, indent=2, ensure_ascii=False)
 
-        logging.info(f"\n✓ Reporte guardado en: {ruta_reporte}")
+        logging.info(f"💾 Reporte guardado en: {ruta_reporte}")
         return ruta_reporte
 
     def _calcular_porcentajes_emociones(self) -> Dict[str, float]:
@@ -417,6 +456,7 @@ class AnalizadorEmociones:
         logging.info(f"  Frames con rostros: {self.stats['frames_con_rostros']}")
         logging.info(f"  Frames sin rostros: {self.stats['frames_sin_rostros']}")
         logging.info(f"  Rostros detectados: {self.stats['rostros_totales']}")
+        logging.info(f"  ⏱️  Tiempo total: {self.stats['tiempo_total']:.2f} minutos")
 
         if self.stats['frames_con_rostros'] > 0:
             promedio = self.stats['rostros_totales'] / self.stats['frames_con_rostros']
@@ -425,7 +465,6 @@ class AnalizadorEmociones:
         logging.info(f"\n😊 DISTRIBUCIÓN DE EMOCIONES:")
         porcentajes = self._calcular_porcentajes_emociones()
 
-        # Ordenar por frecuencia
         emociones_ordenadas = sorted(
             self.emociones_contador.items(),
             key=lambda x: x[1],
@@ -445,39 +484,43 @@ class AnalizadorEmociones:
 
 def main():
     """
-    Función principal - Ejemplo de uso completo
+    Función principal con opciones de configuración
     """
     logging.info("="*60)
-    logging.info("SISTEMA DE ANÁLISIS DE EMOCIONES")
-    logging.info("Extracción + Análisis + Anotación EN TIEMPO REAL")
+    logging.info("SISTEMA DE ANÁLISIS DE EMOCIONES - VERSIÓN OPTIMIZADA")
+    logging.info("Procesa TODO el video con límites de tiempo")
     logging.info("="*60)
 
-    # Configuración
     BASE_DIR = Path(__file__).resolve().parent.parent
-    VIDEO_DE_ENTRADA = BASE_DIR / "data" / "videos" / "mivideo.mp4"
+    VIDEO_DE_ENTRADA = BASE_DIR / "data" / "videos" / "Wilner.mp4"
 
-    # Crear analizador
     analizador = AnalizadorEmociones(output_dir='resultados_emociones')
 
-    # PASO 1: Extraer frames CON análisis y anotación directa
-    logging.info("\n📹 PASO 1: EXTRACCIÓN CON ANÁLISIS Y ANOTACIÓN")
-    if not analizador.extraer_frames_con_emociones(VIDEO_DE_ENTRADA, fps_extraccion=5):
-        logging.error("Error en el proceso. Finalizando.")
+    logging.info("\n📹 INICIANDO ANÁLISIS")
+    
+    # OPCIÓN 1: Límite por tiempo (5 minutos máximo)
+    # if not analizador.extraer_frames_con_emociones(VIDEO_DE_ENTRADA, max_minutos=5.0):
+    
+    # OPCIÓN 2: Límite por FPS (2 fps = ~82 frames para video de 41s)
+    if not analizador.extraer_frames_con_emociones(VIDEO_DE_ENTRADA, fps_extraccion=2):
+    
+    # OPCIÓN 3: Límite por frames totales (200 frames máximo)
+    # if not analizador.extraer_frames_con_emociones(VIDEO_DE_ENTRADA, max_frames=200):
+        
+        logging.error("❌ Error en el proceso. Finalizando.")
         return
 
-    # PASO 2: Generar reporte JSON
-    logging.info("\n📄 PASO 2: GENERACIÓN DE REPORTE")
+    logging.info("\n📄 GENERANDO REPORTE")
     analizador.generar_reporte_json()
 
-    # PASO 3: Mostrar resumen
     analizador.imprimir_resumen()
 
     logging.info("\n" + "="*60)
     logging.info("✅ ANÁLISIS COMPLETADO")
     logging.info("="*60)
-    logging.info(f"\nResultados disponibles en:")
-    logging.info(f"  📁 Frames (con emociones): {analizador.frames_dir}")
-    logging.info(f"  📊 Reportes: {analizador.reports_dir}")
+    logging.info(f"\n📁 Resultados:")
+    logging.info(f"  Frames: {analizador.frames_dir}")
+    logging.info(f"  Reportes: {analizador.reports_dir}")
 
 
 if __name__ == "__main__":

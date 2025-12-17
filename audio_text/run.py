@@ -6,6 +6,9 @@ import logging
 from pathlib import Path
 from typing import Any, Dict
 from collections import defaultdict
+import sys
+# AGREGAR ESTAS LÍNEAS AL INICIO
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import matplotlib.pyplot as plt
 

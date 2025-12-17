@@ -12,7 +12,7 @@ FLUJO:
 5. Continuar con siguiente frame
 
 Autor: Sistema de Reconocimiento Facial
-Fecha: 15 de diciembre, 2025
+Fecha: 16 de diciembre, 2025
 """
 
 import cv2
@@ -42,7 +42,6 @@ def convertir_a_tipo_nativo(obj):
     else:
         return obj
 
-# Configuración de logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
@@ -65,11 +64,9 @@ class AnalizadorEmociones:
         self.frames_dir = self.output_dir / 'frames'
         self.reports_dir = self.output_dir / 'reports'
 
-        # Crear directorios
         self.frames_dir.mkdir(parents=True, exist_ok=True)
         self.reports_dir.mkdir(parents=True, exist_ok=True)
 
-        # Estadísticas
         self.stats = {
             'frames_totales': 0,
             'frames_con_rostros': 0,
@@ -77,6 +74,8 @@ class AnalizadorEmociones:
             'rostros_totales': 0,
             'errores': []
         }
+        
+        self.fps_analisis = 0.0
 
         # Contadores de emociones
         self.emociones_contador = {
@@ -106,13 +105,7 @@ class AnalizadorEmociones:
     def dibujar_anotaciones(self, frame, rostros_info: List[Dict[str, Any]]) -> np.ndarray:
         """
         Dibuja recuadros y emociones en el frame
-
-        Args:
-            frame: Imagen OpenCV (numpy array)
-            rostros_info: Lista con información de rostros detectados
-
-        Returns:
-            frame anotado con recuadros y texto
+        ...
         """
         frame_anotado = frame.copy()
 
@@ -184,17 +177,18 @@ class AnalizadorEmociones:
     def analizar_y_anotar_frame(self, frame, frame_count: int) -> Dict[str, Any]:
         """
         Analiza un frame y devuelve la información + frame anotado
-
-        Args:
-            frame: Frame de OpenCV
-            frame_count: Número del frame
-
-        Returns:
-            dict con información del análisis
+        ...
         """
+        # **CAMBIO CLAVE 2: Cálculo del Timestamp del Video (Sincronización)**
+        timestamp_seconds = 0.0
+        if self.fps_analisis > 0:
+            # Sincronización Video-a-Audio: t_video = (frame_extraido / FPS_analisis)
+            timestamp_seconds = frame_count / self.fps_analisis 
+            
         resultado = {
             'frame_name': f"frame_{frame_count:05d}.jpg",
             'frame_number': frame_count,
+            'timestamp_seconds': round(timestamp_seconds, 3), # <--- ¡EL TIEMPO EN SEGUNDOS!
             'num_rostros': 0,
             'rostros': [],
             'error': None
@@ -259,13 +253,7 @@ class AnalizadorEmociones:
     def extraer_frames_con_emociones(self, ruta_video: str, fps_extraccion: Optional[int] = None) -> bool:
         """
         Extrae frames del video y DIRECTAMENTE los analiza y anota con emociones
-
-        Args:
-            ruta_video: Ruta al archivo de video
-            fps_extraccion: Frames por segundo a extraer (None = todos los frames)
-
-        Returns:
-            bool: True si exitoso, False si error
+        ...
         """
         logging.info(f"Iniciando extracción y análisis de frames desde: {ruta_video}")
 
@@ -287,9 +275,13 @@ class AnalizadorEmociones:
             frame_interval = int(fps_original / fps_extraccion)
             if frame_interval < 1:
                 frame_interval = 1
-            logging.info(f"Extrayendo 1 frame cada {frame_interval} frames ({fps_extraccion} fps)")
+            # **CAMBIO CLAVE 3: Guardar FPS de Análisis real**
+            self.fps_analisis = fps_original / frame_interval
+            logging.info(f"Extrayendo 1 frame cada {frame_interval} frames ({self.fps_analisis:.2f} fps)")
         else:
             frame_interval = 1
+            # **CAMBIO CLAVE 3: Guardar FPS de Análisis real**
+            self.fps_analisis = fps_original
             logging.info("Extrayendo todos los frames")
 
         logging.info("✨ Analizando y anotando emociones en tiempo real...")
@@ -340,9 +332,7 @@ class AnalizadorEmociones:
     def generar_reporte_json(self, nombre_archivo: str = 'emotion_analysis_report.json'):
         """
         Genera un reporte JSON completo con todos los resultados
-
-        Args:
-            nombre_archivo: Nombre del archivo de reporte
+        ...
         """
         # Calcular estadísticas adicionales
         if self.stats['frames_con_rostros'] > 0:
@@ -454,7 +444,8 @@ def main():
 
     # Configuración
     BASE_DIR = Path(__file__).resolve().parent.parent
-    VIDEO_DE_ENTRADA = BASE_DIR / "data" / "videos" / "mivideo.mp4"
+    # NOTA: Debes cambiar esta ruta por la ruta real de tu video
+    VIDEO_DE_ENTRADA = BASE_DIR / "data" / "videos" / "mivideo.mp4" 
 
     # Crear analizador
     analizador = AnalizadorEmociones(output_dir='resultados_emociones')

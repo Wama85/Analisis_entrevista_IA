@@ -1,0 +1,7168 @@
+{
+  "fecha_analisis": "2025-12-16T21:57:28.433793",
+  "resumen": {
+    "frames_totales": 164,
+    "frames_con_rostros": 164,
+    "frames_sin_rostros": 0,
+    "rostros_totales_detectados": 174,
+    "promedio_rostros_por_frame": 1.06,
+    "emocion_mas_comun": "neutral",
+    "frecuencia_emocion_mas_comun": 90
+  },
+  "distribucion_emociones": {
+    "angry": 10,
+    "disgust": 7,
+    "fear": 17,
+    "happy": 35,
+    "sad": 10,
+    "surprise": 5,
+    "neutral": 90
+  },
+  "porcentaje_emociones": {
+    "angry": 5.75,
+    "disgust": 4.02,
+    "fear": 9.77,
+    "happy": 20.11,
+    "sad": 5.75,
+    "surprise": 2.87,
+    "neutral": 51.72
+  },
+  "analisis_por_frame": [
+    {
+      "frame_name": "frame_00000.jpg",
+      "frame_number": 0,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.5828109979629517,
+            "disgust": 0.003026337129995227,
+            "fear": 0.006128762383013964,
+            "happy": 75.4026107788086,
+            "sad": 0.2964854836463928,
+            "surprise": 0.1693076193332672,
+            "neutral": 23.539636611938477
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.2870245575904846,
+            "Man": 99.71297454833984
+          },
+          "region": {
+            "x": 247,
+            "y": 315,
+            "w": 375,
+            "h": 375,
+            "left_eye": [
+              502,
+              454
+            ],
+            "right_eye": [
+              364,
+              447
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00000.jpg"
+    },
+    {
+      "frame_name": "frame_00001.jpg",
+      "frame_number": 1,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.0004329629009589553,
+            "disgust": 1.9848748422646167e-07,
+            "fear": 0.10340618342161179,
+            "happy": 77.18343353271484,
+            "sad": 0.14308364689350128,
+            "surprise": 6.074525572330458e-06,
+            "neutral": 22.56964874267578
+          },
+          "edad": 35,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 20.342269897460938,
+            "Man": 79.65773010253906
+          },
+          "region": {
+            "x": 237,
+            "y": 352,
+            "w": 393,
+            "h": 393,
+            "left_eye": [
+              508,
+              496
+            ],
+            "right_eye": [
+              411,
+              655
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00001.jpg"
+    },
+    {
+      "frame_name": "frame_00002.jpg",
+      "frame_number": 2,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.02922927960753441,
+            "disgust": 6.908049726916943e-06,
+            "fear": 0.5716662406921387,
+            "happy": 24.627626419067383,
+            "sad": 2.1534841060638428,
+            "surprise": 0.001269353087991476,
+            "neutral": 72.6167221069336
+          },
+          "edad": 31,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 21.21976089477539,
+            "Man": 78.78024291992188
+          },
+          "region": {
+            "x": 238,
+            "y": 343,
+            "w": 384,
+            "h": 384,
+            "left_eye": [
+              503,
+              483
+            ],
+            "right_eye": [
+              405,
+              641
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00002.jpg"
+    },
+    {
+      "frame_name": "frame_00003.jpg",
+      "frame_number": 3,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.8101259469985962,
+            "disgust": 0.0013481603236868978,
+            "fear": 0.9490034580230713,
+            "happy": 59.63482666015625,
+            "sad": 1.0391420125961304,
+            "surprise": 0.725705623626709,
+            "neutral": 36.839847564697266
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.2596839368343353,
+            "Man": 99.74031066894531
+          },
+          "region": {
+            "x": 238,
+            "y": 341,
+            "w": 375,
+            "h": 375,
+            "left_eye": [
+              496,
+              480
+            ],
+            "right_eye": [
+              353,
+              468
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00003.jpg"
+    },
+    {
+      "frame_name": "frame_00004.jpg",
+      "frame_number": 4,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 6.578527927398682,
+            "disgust": 1.5975732594597503e-06,
+            "fear": 0.45206305384635925,
+            "happy": 5.6624345779418945,
+            "sad": 0.5956365466117859,
+            "surprise": 0.0020764644723385572,
+            "neutral": 86.70926666259766
+          },
+          "edad": 37,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 24.18869972229004,
+            "Man": 75.81129455566406
+          },
+          "region": {
+            "x": 240,
+            "y": 325,
+            "w": 386,
+            "h": 386,
+            "left_eye": [
+              503,
+              468
+            ],
+            "right_eye": [
+              413,
+              631
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00004.jpg"
+    },
+    {
+      "frame_name": "frame_00005.jpg",
+      "frame_number": 5,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.08619336783885956,
+            "disgust": 2.1379739645333018e-10,
+            "fear": 0.0034997365437448025,
+            "happy": 0.022906756028532982,
+            "sad": 0.7832507491111755,
+            "surprise": 7.18393448551069e-06,
+            "neutral": 99.10414123535156
+          },
+          "edad": 36,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 25.559011459350586,
+            "Man": 74.44099426269531
+          },
+          "region": {
+            "x": 231,
+            "y": 336,
+            "w": 415,
+            "h": 415,
+            "left_eye": [
+              512,
+              498
+            ],
+            "right_eye": [
+              413,
+              693
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00005.jpg"
+    },
+    {
+      "frame_name": "frame_00006.jpg",
+      "frame_number": 6,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.2176542729139328,
+            "disgust": 0.0004211619379930198,
+            "fear": 1.0182414054870605,
+            "happy": 28.050765991210938,
+            "sad": 0.42889052629470825,
+            "surprise": 0.5048468708992004,
+            "neutral": 69.77919006347656
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.1653662472963333,
+            "Man": 99.83463287353516
+          },
+          "region": {
+            "x": 216,
+            "y": 346,
+            "w": 393,
+            "h": 393,
+            "left_eye": [
+              483,
+              489
+            ],
+            "right_eye": [
+              331,
+              479
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00006.jpg"
+    },
+    {
+      "frame_name": "frame_00007.jpg",
+      "frame_number": 7,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 2.012136220932007,
+            "disgust": 7.596634077344788e-06,
+            "fear": 6.1119561195373535,
+            "happy": 0.08636803925037384,
+            "sad": 5.047317981719971,
+            "surprise": 0.029639845713973045,
+            "neutral": 86.71257019042969
+          },
+          "edad": 29,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.16971103847026825,
+            "Man": 99.83028411865234
+          },
+          "region": {
+            "x": 211,
+            "y": 343,
+            "w": 380,
+            "h": 380,
+            "left_eye": [
+              476,
+              479
+            ],
+            "right_eye": [
+              325,
+              469
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00007.jpg"
+    },
+    {
+      "frame_name": "frame_00008.jpg",
+      "frame_number": 8,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 5.305315971374512,
+            "disgust": 1.0330360055377241e-05,
+            "fear": 0.8346050977706909,
+            "happy": 93.23181915283203,
+            "sad": 0.1258070319890976,
+            "surprise": 3.064844520395127e-07,
+            "neutral": 0.5024399757385254
+          },
+          "edad": 35,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 21.371231079101562,
+            "Man": 78.62876892089844
+          },
+          "region": {
+            "x": 210,
+            "y": 334,
+            "w": 390,
+            "h": 390,
+            "left_eye": [
+              480,
+              474
+            ],
+            "right_eye": [
+              390,
+              642
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00008.jpg"
+    },
+    {
+      "frame_name": "frame_00009.jpg",
+      "frame_number": 9,
+      "num_rostros": 2,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 12.390154838562012,
+            "disgust": 0.2574409246444702,
+            "fear": 6.262516021728516,
+            "happy": 43.662498474121094,
+            "sad": 6.7055344581604,
+            "surprise": 0.8824608325958252,
+            "neutral": 29.839397430419922
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.3261328339576721,
+            "Man": 99.67385864257812
+          },
+          "region": {
+            "x": 230,
+            "y": 319,
+            "w": 393,
+            "h": 393,
+            "left_eye": [
+              492,
+              470
+            ],
+            "right_eye": [
+              347,
+              459
+            ]
+          }
+        },
+        {
+          "rostro_id": 1,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 1.6396827697753906,
+            "disgust": 0.03984096273779869,
+            "fear": 69.32393646240234,
+            "happy": 14.585911750793457,
+            "sad": 7.3683648109436035,
+            "surprise": 1.355466365814209,
+            "neutral": 5.686803340911865
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 10.066486358642578,
+            "Man": 89.93351745605469
+          },
+          "region": {
+            "x": 101,
+            "y": 1219,
+            "w": 53,
+            "h": 53,
+            "left_eye": null,
+            "right_eye": null
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00009.jpg"
+    },
+    {
+      "frame_name": "frame_00010.jpg",
+      "frame_number": 10,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0001032402942655608,
+            "disgust": 2.0888631269144753e-08,
+            "fear": 0.0002485754375811666,
+            "happy": 0.6207064390182495,
+            "sad": 0.03955305367708206,
+            "surprise": 6.244303222047165e-05,
+            "neutral": 99.33932495117188
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 53.03346633911133,
+            "Man": 46.96653366088867
+          },
+          "region": {
+            "x": 218,
+            "y": 358,
+            "w": 407,
+            "h": 407,
+            "left_eye": [
+              406,
+              683
+            ],
+            "right_eye": [
+              346,
+              498
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00010.jpg"
+    },
+    {
+      "frame_name": "frame_00011.jpg",
+      "frame_number": 11,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.11535102128982544,
+            "disgust": 0.00040382592123933136,
+            "fear": 0.09632444381713867,
+            "happy": 54.36506271362305,
+            "sad": 3.734665632247925,
+            "surprise": 0.008841918781399727,
+            "neutral": 41.67934799194336
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 76.15865325927734,
+            "Man": 23.841337203979492
+          },
+          "region": {
+            "x": 211,
+            "y": 345,
+            "w": 396,
+            "h": 396,
+            "left_eye": [
+              393,
+              652
+            ],
+            "right_eye": [
+              333,
+              478
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00011.jpg"
+    },
+    {
+      "frame_name": "frame_00012.jpg",
+      "frame_number": 12,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 1.0384553670883179,
+            "disgust": 4.7997462388593704e-05,
+            "fear": 5.363018989562988,
+            "happy": 0.3516429364681244,
+            "sad": 2.5876901149749756,
+            "surprise": 0.021244432777166367,
+            "neutral": 90.63790130615234
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.24497094750404358,
+            "Man": 99.7550277709961
+          },
+          "region": {
+            "x": 213,
+            "y": 328,
+            "w": 402,
+            "h": 402,
+            "left_eye": [
+              488,
+              473
+            ],
+            "right_eye": [
+              338,
+              463
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00012.jpg"
+    },
+    {
+      "frame_name": "frame_00013.jpg",
+      "frame_number": 13,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.11009871959686279,
+            "disgust": 3.5415210732026026e-05,
+            "fear": 22.832496643066406,
+            "happy": 1.3911125659942627,
+            "sad": 2.331162929534912,
+            "surprise": 0.17631228268146515,
+            "neutral": 73.15877532958984
+          },
+          "edad": 29,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.3571666181087494,
+            "Man": 99.64282989501953
+          },
+          "region": {
+            "x": 249,
+            "y": 357,
+            "w": 371,
+            "h": 371,
+            "left_eye": null,
+            "right_eye": null
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00013.jpg"
+    },
+    {
+      "frame_name": "frame_00014.jpg",
+      "frame_number": 14,
+      "num_rostros": 2,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "sad",
+          "emociones": {
+            "angry": 0.00014362152433022857,
+            "disgust": 5.457140517250991e-09,
+            "fear": 0.30161577463150024,
+            "happy": 3.470595359802246,
+            "sad": 95.56350708007812,
+            "surprise": 0.002762658055871725,
+            "neutral": 0.6613801121711731
+          },
+          "edad": 35,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 13.347824096679688,
+            "Man": 86.65216827392578
+          },
+          "region": {
+            "x": 0,
+            "y": 1069,
+            "w": 128,
+            "h": 128,
+            "left_eye": null,
+            "right_eye": null
+          }
+        },
+        {
+          "rostro_id": 1,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 10.913785934448242,
+            "disgust": 0.004354387987405062,
+            "fear": 16.895797729492188,
+            "happy": 0.9593877792358398,
+            "sad": 21.605308532714844,
+            "surprise": 0.023691484704613686,
+            "neutral": 49.59767150878906
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.34098947048187256,
+            "Man": 99.65901184082031
+          },
+          "region": {
+            "x": 240,
+            "y": 344,
+            "w": 369,
+            "h": 369,
+            "left_eye": [
+              500,
+              480
+            ],
+            "right_eye": [
+              358,
+              460
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00014.jpg"
+    },
+    {
+      "frame_name": "frame_00015.jpg",
+      "frame_number": 15,
+      "num_rostros": 2,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "sad",
+          "emociones": {
+            "angry": 0.36139020323753357,
+            "disgust": 0.0011974201770499349,
+            "fear": 1.2553459405899048,
+            "happy": 2.1491756439208984,
+            "sad": 94.18207550048828,
+            "surprise": 0.0020611106883734465,
+            "neutral": 2.048757553100586
+          },
+          "edad": 35,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 19.79006576538086,
+            "Man": 80.20993041992188
+          },
+          "region": {
+            "x": 0,
+            "y": 1084,
+            "w": 128,
+            "h": 128,
+            "left_eye": [
+              84,
+              1123
+            ],
+            "right_eye": [
+              80,
+              1125
+            ]
+          }
+        },
+        {
+          "rostro_id": 1,
+          "emocion_dominante": "angry",
+          "emociones": {
+            "angry": 49.3344841003418,
+            "disgust": 35.871150970458984,
+            "fear": 5.179573059082031,
+            "happy": 4.023286819458008,
+            "sad": 2.355137586593628,
+            "surprise": 1.4312952756881714,
+            "neutral": 1.805081844329834
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.045553989708423615,
+            "Man": 99.9544448852539
+          },
+          "region": {
+            "x": 261,
+            "y": 360,
+            "w": 370,
+            "h": 370,
+            "left_eye": [
+              519,
+              498
+            ],
+            "right_eye": [
+              374,
+              477
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00015.jpg"
+    },
+    {
+      "frame_name": "frame_00016.jpg",
+      "frame_number": 16,
+      "num_rostros": 2,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 1.0793523788452148,
+            "disgust": 8.459362106805202e-06,
+            "fear": 0.04376688972115517,
+            "happy": 0.1820487678050995,
+            "sad": 6.242932319641113,
+            "surprise": 0.010482068173587322,
+            "neutral": 92.44141387939453
+          },
+          "edad": 35,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 17.67140007019043,
+            "Man": 82.3285903930664
+          },
+          "region": {
+            "x": 0,
+            "y": 1081,
+            "w": 128,
+            "h": 128,
+            "left_eye": null,
+            "right_eye": null
+          }
+        },
+        {
+          "rostro_id": 1,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.13273845613002777,
+            "disgust": 0.0011319072218611836,
+            "fear": 0.5104180574417114,
+            "happy": 1.3103307485580444,
+            "sad": 47.39261245727539,
+            "surprise": 0.00039696029853075743,
+            "neutral": 50.652374267578125
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 76.94564056396484,
+            "Man": 23.054363250732422
+          },
+          "region": {
+            "x": 231,
+            "y": 330,
+            "w": 381,
+            "h": 381,
+            "left_eye": [
+              403,
+              619
+            ],
+            "right_eye": [
+              349,
+              458
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00016.jpg"
+    },
+    {
+      "frame_name": "frame_00017.jpg",
+      "frame_number": 17,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.15519677102565765,
+            "disgust": 0.009165626950562,
+            "fear": 0.08400754630565643,
+            "happy": 78.83087921142578,
+            "sad": 0.7138068079948425,
+            "surprise": 0.006177070550620556,
+            "neutral": 20.200761795043945
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 77.49459838867188,
+            "Man": 22.505401611328125
+          },
+          "region": {
+            "x": 227,
+            "y": 336,
+            "w": 363,
+            "h": 363,
+            "left_eye": [
+              393,
+              626
+            ],
+            "right_eye": [
+              339,
+              454
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00017.jpg"
+    },
+    {
+      "frame_name": "frame_00018.jpg",
+      "frame_number": 18,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.00018209576955996454,
+            "disgust": 1.0732114086309252e-09,
+            "fear": 0.019680045545101166,
+            "happy": 0.14566168189048767,
+            "sad": 0.17205584049224854,
+            "surprise": 9.00036611710675e-05,
+            "neutral": 99.66232299804688
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 42.768470764160156,
+            "Man": 57.23153305053711
+          },
+          "region": {
+            "x": 237,
+            "y": 334,
+            "w": 399,
+            "h": 399,
+            "left_eye": [
+              511,
+              497
+            ],
+            "right_eye": [
+              408,
+              645
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00018.jpg"
+    },
+    {
+      "frame_name": "frame_00019.jpg",
+      "frame_number": 19,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 3.1216421127319336,
+            "disgust": 0.0074055390432477,
+            "fear": 0.49201762676239014,
+            "happy": 34.40254592895508,
+            "sad": 18.849679946899414,
+            "surprise": 0.0013307634508237243,
+            "neutral": 43.1253776550293
+          },
+          "edad": 36,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 24.605749130249023,
+            "Man": 75.39424133300781
+          },
+          "region": {
+            "x": 219,
+            "y": 327,
+            "w": 394,
+            "h": 394,
+            "left_eye": [
+              497,
+              481
+            ],
+            "right_eye": [
+              398,
+              638
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00019.jpg"
+    },
+    {
+      "frame_name": "frame_00020.jpg",
+      "frame_number": 20,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.00878765620291233,
+            "disgust": 3.884832403855398e-05,
+            "fear": 0.7626025080680847,
+            "happy": 0.39590317010879517,
+            "sad": 27.525733947753906,
+            "surprise": 6.225636752787977e-05,
+            "neutral": 71.30686950683594
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 76.45943450927734,
+            "Man": 23.540573120117188
+          },
+          "region": {
+            "x": 231,
+            "y": 329,
+            "w": 399,
+            "h": 399,
+            "left_eye": [
+              407,
+              657
+            ],
+            "right_eye": [
+              357,
+              465
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00020.jpg"
+    },
+    {
+      "frame_name": "frame_00021.jpg",
+      "frame_number": 21,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 1.9713246822357178,
+            "disgust": 1.400731690637258e-07,
+            "fear": 0.03531530499458313,
+            "happy": 2.4415371417999268,
+            "sad": 6.526021480560303,
+            "surprise": 1.3616145224659704e-06,
+            "neutral": 89.02580261230469
+          },
+          "edad": 36,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 24.68535614013672,
+            "Man": 75.31464385986328
+          },
+          "region": {
+            "x": 214,
+            "y": 335,
+            "w": 401,
+            "h": 401,
+            "left_eye": [
+              492,
+              484
+            ],
+            "right_eye": [
+              395,
+              657
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00021.jpg"
+    },
+    {
+      "frame_name": "frame_00022.jpg",
+      "frame_number": 22,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 23.908449172973633,
+            "disgust": 0.1307813972234726,
+            "fear": 30.775171279907227,
+            "happy": 0.3507287800312042,
+            "sad": 11.110956192016602,
+            "surprise": 0.031289294362068176,
+            "neutral": 33.692623138427734
+          },
+          "edad": 28,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.24978873133659363,
+            "Man": 99.75021362304688
+          },
+          "region": {
+            "x": 236,
+            "y": 347,
+            "w": 373,
+            "h": 373,
+            "left_eye": [
+              500,
+              479
+            ],
+            "right_eye": [
+              347,
+              466
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00022.jpg"
+    },
+    {
+      "frame_name": "frame_00023.jpg",
+      "frame_number": 23,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.01795695722103119,
+            "disgust": 2.884008267756144e-07,
+            "fear": 0.1404712051153183,
+            "happy": 0.05708017200231552,
+            "sad": 0.11144725233316422,
+            "surprise": 0.009639406576752663,
+            "neutral": 99.66340637207031
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.2109750211238861,
+            "Man": 99.78903198242188
+          },
+          "region": {
+            "x": 223,
+            "y": 321,
+            "w": 409,
+            "h": 409,
+            "left_eye": [
+              495,
+              475
+            ],
+            "right_eye": [
+              349,
+              468
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00023.jpg"
+    },
+    {
+      "frame_name": "frame_00024.jpg",
+      "frame_number": 24,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 1.6193864345550537,
+            "disgust": 0.00021399032266344875,
+            "fear": 5.4014763832092285,
+            "happy": 0.320475310087204,
+            "sad": 7.002138137817383,
+            "surprise": 0.0017444001277908683,
+            "neutral": 85.6545639038086
+          },
+          "edad": 30,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.2671242356300354,
+            "Man": 99.73287963867188
+          },
+          "region": {
+            "x": 240,
+            "y": 346,
+            "w": 380,
+            "h": 380,
+            "left_eye": [
+              502,
+              485
+            ],
+            "right_eye": [
+              358,
+              476
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00024.jpg"
+    },
+    {
+      "frame_name": "frame_00025.jpg",
+      "frame_number": 25,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "disgust",
+          "emociones": {
+            "angry": 12.666744232177734,
+            "disgust": 79.92311096191406,
+            "fear": 3.5361554622650146,
+            "happy": 0.11078877002000809,
+            "sad": 0.6465479135513306,
+            "surprise": 2.924525260925293,
+            "neutral": 0.19213144481182098
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.13105390965938568,
+            "Man": 99.86894989013672
+          },
+          "region": {
+            "x": 271,
+            "y": 360,
+            "w": 340,
+            "h": 340,
+            "left_eye": [
+              512,
+              479
+            ],
+            "right_eye": [
+              370,
+              461
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00025.jpg"
+    },
+    {
+      "frame_name": "frame_00026.jpg",
+      "frame_number": 26,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "disgust",
+          "emociones": {
+            "angry": 40.036659240722656,
+            "disgust": 56.87269973754883,
+            "fear": 2.2596871852874756,
+            "happy": 0.35301679372787476,
+            "sad": 0.1313467025756836,
+            "surprise": 0.3354053199291229,
+            "neutral": 0.011189358308911324
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.22256717085838318,
+            "Man": 99.77742767333984
+          },
+          "region": {
+            "x": 269,
+            "y": 346,
+            "w": 363,
+            "h": 363,
+            "left_eye": [
+              525,
+              479
+            ],
+            "right_eye": [
+              384,
+              457
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00026.jpg"
+    },
+    {
+      "frame_name": "frame_00027.jpg",
+      "frame_number": 27,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 13.016552925109863,
+            "disgust": 0.8318578600883484,
+            "fear": 22.135515213012695,
+            "happy": 56.01640319824219,
+            "sad": 4.404286861419678,
+            "surprise": 0.6992947459220886,
+            "neutral": 2.896092176437378
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.14046885073184967,
+            "Man": 99.85952758789062
+          },
+          "region": {
+            "x": 235,
+            "y": 353,
+            "w": 381,
+            "h": 381,
+            "left_eye": [
+              498,
+              502
+            ],
+            "right_eye": [
+              352,
+              481
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00027.jpg"
+    },
+    {
+      "frame_name": "frame_00028.jpg",
+      "frame_number": 28,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0011124903103336692,
+            "disgust": 1.4412772770810989e-06,
+            "fear": 0.02310088276863098,
+            "happy": 10.43022632598877,
+            "sad": 15.419417381286621,
+            "surprise": 3.442285378696397e-05,
+            "neutral": 74.12610626220703
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 90.83655548095703,
+            "Man": 9.163446426391602
+          },
+          "region": {
+            "x": 209,
+            "y": 340,
+            "w": 412,
+            "h": 412,
+            "left_eye": [
+              395,
+              661
+            ],
+            "right_eye": [
+              336,
+              477
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00028.jpg"
+    },
+    {
+      "frame_name": "frame_00029.jpg",
+      "frame_number": 29,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 1.8153744463234034e-07,
+            "disgust": 5.874432450897471e-12,
+            "fear": 0.0005649754893966019,
+            "happy": 1.9202361106872559,
+            "sad": 1.6564855575561523,
+            "surprise": 6.252484581636963e-06,
+            "neutral": 96.4227066040039
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 69.74559783935547,
+            "Man": 30.25440216064453
+          },
+          "region": {
+            "x": 191,
+            "y": 324,
+            "w": 442,
+            "h": 442,
+            "left_eye": [
+              384,
+              691
+            ],
+            "right_eye": [
+              326,
+              476
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00029.jpg"
+    },
+    {
+      "frame_name": "frame_00030.jpg",
+      "frame_number": 30,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 4.87101630142206e-08,
+            "disgust": 1.9868952316759447e-10,
+            "fear": 8.350981488547404e-07,
+            "happy": 85.09375,
+            "sad": 0.008176777511835098,
+            "surprise": 1.0289205043534366e-08,
+            "neutral": 14.898079872131348
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 64.46401977539062,
+            "Man": 35.53598403930664
+          },
+          "region": {
+            "x": 179,
+            "y": 352,
+            "w": 439,
+            "h": 439,
+            "left_eye": [
+              380,
+              711
+            ],
+            "right_eye": [
+              279,
+              450
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00030.jpg"
+    },
+    {
+      "frame_name": "frame_00031.jpg",
+      "frame_number": 31,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.007282222155481577,
+            "disgust": 1.1317200915073045e-05,
+            "fear": 0.0662536472082138,
+            "happy": 4.006561279296875,
+            "sad": 6.4633049964904785,
+            "surprise": 0.0020435291808098555,
+            "neutral": 89.45454406738281
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 24.324426651000977,
+            "Man": 75.67557525634766
+          },
+          "region": {
+            "x": 189,
+            "y": 340,
+            "w": 422,
+            "h": 422,
+            "left_eye": [
+              479,
+              498
+            ],
+            "right_eye": [
+              379,
+              683
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00031.jpg"
+    },
+    {
+      "frame_name": "frame_00032.jpg",
+      "frame_number": 32,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.00035058779758401215,
+            "disgust": 8.731502020964399e-06,
+            "fear": 0.07370913028717041,
+            "happy": 64.07363891601562,
+            "sad": 0.8307317495346069,
+            "surprise": 0.00011240050662308931,
+            "neutral": 35.021446228027344
+          },
+          "edad": 35,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 26.091527938842773,
+            "Man": 73.90846252441406
+          },
+          "region": {
+            "x": 198,
+            "y": 348,
+            "w": 395,
+            "h": 395,
+            "left_eye": [
+              473,
+              488
+            ],
+            "right_eye": [
+              382,
+              662
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00032.jpg"
+    },
+    {
+      "frame_name": "frame_00033.jpg",
+      "frame_number": 33,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.004748144187033176,
+            "disgust": 1.5128662766983325e-08,
+            "fear": 0.0021732973400503397,
+            "happy": 1.4513403177261353,
+            "sad": 0.09229583293199539,
+            "surprise": 0.0016755879623815417,
+            "neutral": 98.44776153564453
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 22.264055252075195,
+            "Man": 77.7359390258789
+          },
+          "region": {
+            "x": 215,
+            "y": 345,
+            "w": 379,
+            "h": 379,
+            "left_eye": [
+              475,
+              481
+            ],
+            "right_eye": [
+              391,
+              652
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00033.jpg"
+    },
+    {
+      "frame_name": "frame_00034.jpg",
+      "frame_number": 34,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 12.417623519897461,
+            "disgust": 0.10159642994403839,
+            "fear": 1.0630943775177002,
+            "happy": 24.052228927612305,
+            "sad": 2.068591594696045,
+            "surprise": 8.240660667419434,
+            "neutral": 52.05620574951172
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.3536253869533539,
+            "Man": 99.64636993408203
+          },
+          "region": {
+            "x": 207,
+            "y": 327,
+            "w": 397,
+            "h": 397,
+            "left_eye": [
+              474,
+              473
+            ],
+            "right_eye": [
+              328,
+              466
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00034.jpg"
+    },
+    {
+      "frame_name": "frame_00035.jpg",
+      "frame_number": 35,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "angry",
+          "emociones": {
+            "angry": 41.9129753112793,
+            "disgust": 9.222416877746582,
+            "fear": 29.8831787109375,
+            "happy": 7.2020063400268555,
+            "sad": 7.114610195159912,
+            "surprise": 3.7612698078155518,
+            "neutral": 0.903544545173645
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.1627742499113083,
+            "Man": 99.83722686767578
+          },
+          "region": {
+            "x": 214,
+            "y": 335,
+            "w": 385,
+            "h": 385,
+            "left_eye": [
+              485,
+              480
+            ],
+            "right_eye": [
+              337,
+              464
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00035.jpg"
+    },
+    {
+      "frame_name": "frame_00036.jpg",
+      "frame_number": 36,
+      "num_rostros": 2,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.006782397627830505,
+            "disgust": 6.679155922029167e-05,
+            "fear": 0.7595301866531372,
+            "happy": 3.2966480255126953,
+            "sad": 8.552183151245117,
+            "surprise": 0.0004038246988784522,
+            "neutral": 87.38439178466797
+          },
+          "edad": 36,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 26.172548294067383,
+            "Man": 73.82745361328125
+          },
+          "region": {
+            "x": 190,
+            "y": 336,
+            "w": 416,
+            "h": 416,
+            "left_eye": [
+              474,
+              487
+            ],
+            "right_eye": [
+              383,
+              678
+            ]
+          }
+        },
+        {
+          "rostro_id": 1,
+          "emocion_dominante": "sad",
+          "emociones": {
+            "angry": 0.00018717980128712952,
+            "disgust": 1.5697651511992206e-11,
+            "fear": 11.625419616699219,
+            "happy": 5.774718481177388e-09,
+            "sad": 88.10950469970703,
+            "surprise": 6.098150456823603e-11,
+            "neutral": 0.26489049196243286
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 5.62083625793457,
+            "Man": 94.37916564941406
+          },
+          "region": {
+            "x": 55,
+            "y": 1042,
+            "w": 191,
+            "h": 191,
+            "left_eye": null,
+            "right_eye": null
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00036.jpg"
+    },
+    {
+      "frame_name": "frame_00037.jpg",
+      "frame_number": 37,
+      "num_rostros": 2,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 2.978982925415039,
+            "disgust": 3.27965881297132e-06,
+            "fear": 1.3791216611862183,
+            "happy": 75.75028991699219,
+            "sad": 2.982011318206787,
+            "surprise": 0.00034544127993285656,
+            "neutral": 16.909255981445312
+          },
+          "edad": 35,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 33.94099807739258,
+            "Man": 66.05899810791016
+          },
+          "region": {
+            "x": 213,
+            "y": 348,
+            "w": 381,
+            "h": 381,
+            "left_eye": [
+              475,
+              486
+            ],
+            "right_eye": [
+              384,
+              649
+            ]
+          }
+        },
+        {
+          "rostro_id": 1,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 0.002798918168991804,
+            "disgust": 2.6704528863774613e-05,
+            "fear": 67.15779876708984,
+            "happy": 0.00038228355697356164,
+            "sad": 32.7507209777832,
+            "surprise": 4.387401375538502e-08,
+            "neutral": 0.08828181028366089
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 5.049333572387695,
+            "Man": 94.9506607055664
+          },
+          "region": {
+            "x": 52,
+            "y": 1025,
+            "w": 182,
+            "h": 182,
+            "left_eye": null,
+            "right_eye": null
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00037.jpg"
+    },
+    {
+      "frame_name": "frame_00038.jpg",
+      "frame_number": 38,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 2.2009184249327518e-05,
+            "disgust": 4.957254162718527e-09,
+            "fear": 0.0014221057062968612,
+            "happy": 3.8513851165771484,
+            "sad": 0.10417323559522629,
+            "surprise": 0.00016317829431500286,
+            "neutral": 96.04283905029297
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 53.14491271972656,
+            "Man": 46.85508728027344
+          },
+          "region": {
+            "x": 215,
+            "y": 361,
+            "w": 390,
+            "h": 390,
+            "left_eye": [
+              482,
+              500
+            ],
+            "right_eye": [
+              393,
+              685
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00038.jpg"
+    },
+    {
+      "frame_name": "frame_00039.jpg",
+      "frame_number": 39,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.002670165617018938,
+            "disgust": 9.63486513683165e-07,
+            "fear": 0.00927162915468216,
+            "happy": 0.21624164283275604,
+            "sad": 8.021297454833984,
+            "surprise": 0.00035974945058114827,
+            "neutral": 91.75016021728516
+          },
+          "edad": 33,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 36.448970794677734,
+            "Man": 63.551025390625
+          },
+          "region": {
+            "x": 209,
+            "y": 352,
+            "w": 395,
+            "h": 395,
+            "left_eye": [
+              480,
+              495
+            ],
+            "right_eye": [
+              386,
+              677
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00039.jpg"
+    },
+    {
+      "frame_name": "frame_00040.jpg",
+      "frame_number": 40,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0004455150628928095,
+            "disgust": 7.235923931148136e-07,
+            "fear": 0.011767544783651829,
+            "happy": 5.369881629943848,
+            "sad": 0.5879781246185303,
+            "surprise": 0.0008246691431850195,
+            "neutral": 94.02910614013672
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 29.21988296508789,
+            "Man": 70.78011322021484
+          },
+          "region": {
+            "x": 215,
+            "y": 331,
+            "w": 400,
+            "h": 400,
+            "left_eye": [
+              487,
+              479
+            ],
+            "right_eye": [
+              397,
+              632
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00040.jpg"
+    },
+    {
+      "frame_name": "frame_00041.jpg",
+      "frame_number": 41,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "disgust",
+          "emociones": {
+            "angry": 9.329654693603516,
+            "disgust": 88.46298217773438,
+            "fear": 1.1133058071136475,
+            "happy": 0.39309677481651306,
+            "sad": 0.38956165313720703,
+            "surprise": 0.27136239409446716,
+            "neutral": 0.040041547268629074
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.20299848914146423,
+            "Man": 99.79700469970703
+          },
+          "region": {
+            "x": 222,
+            "y": 311,
+            "w": 390,
+            "h": 390,
+            "left_eye": [
+              492,
+              451
+            ],
+            "right_eye": [
+              342,
+              442
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00041.jpg"
+    },
+    {
+      "frame_name": "frame_00042.jpg",
+      "frame_number": 42,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "disgust",
+          "emociones": {
+            "angry": 16.69795036315918,
+            "disgust": 31.43467903137207,
+            "fear": 21.680583953857422,
+            "happy": 18.918546676635742,
+            "sad": 2.8294942378997803,
+            "surprise": 5.998834609985352,
+            "neutral": 2.4399142265319824
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.38875848054885864,
+            "Man": 99.61124420166016
+          },
+          "region": {
+            "x": 228,
+            "y": 322,
+            "w": 365,
+            "h": 365,
+            "left_eye": null,
+            "right_eye": null
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00042.jpg"
+    },
+    {
+      "frame_name": "frame_00043.jpg",
+      "frame_number": 43,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 2.306877851486206,
+            "disgust": 0.00037026702193543315,
+            "fear": 3.370389223098755,
+            "happy": 44.57514572143555,
+            "sad": 7.058426380157471,
+            "surprise": 0.11930553615093231,
+            "neutral": 42.569480895996094
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 74.5294189453125,
+            "Man": 25.4705810546875
+          },
+          "region": {
+            "x": 225,
+            "y": 332,
+            "w": 355,
+            "h": 355,
+            "left_eye": [
+              387,
+              608
+            ],
+            "right_eye": [
+              334,
+              449
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00043.jpg"
+    },
+    {
+      "frame_name": "frame_00044.jpg",
+      "frame_number": 44,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.00016106039402075112,
+            "disgust": 3.869960796265559e-09,
+            "fear": 0.0006587323150597513,
+            "happy": 0.09832543134689331,
+            "sad": 0.12691111862659454,
+            "surprise": 0.0020683950278908014,
+            "neutral": 99.77188110351562
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 24.7773380279541,
+            "Man": 75.22266387939453
+          },
+          "region": {
+            "x": 222,
+            "y": 339,
+            "w": 362,
+            "h": 362,
+            "left_eye": [
+              470,
+              472
+            ],
+            "right_eye": [
+              388,
+              630
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00044.jpg"
+    },
+    {
+      "frame_name": "frame_00045.jpg",
+      "frame_number": 45,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "disgust",
+          "emociones": {
+            "angry": 11.997802734375,
+            "disgust": 76.11792755126953,
+            "fear": 4.52213191986084,
+            "happy": 1.5905708074569702,
+            "sad": 2.0106422901153564,
+            "surprise": 0.18950557708740234,
+            "neutral": 3.5714190006256104
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.5353367328643799,
+            "Man": 99.46466064453125
+          },
+          "region": {
+            "x": 224,
+            "y": 331,
+            "w": 362,
+            "h": 362,
+            "left_eye": null,
+            "right_eye": null
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00045.jpg"
+    },
+    {
+      "frame_name": "frame_00046.jpg",
+      "frame_number": 46,
+      "num_rostros": 3,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 2.656054973602295,
+            "disgust": 3.6100267607253045e-05,
+            "fear": 95.19060516357422,
+            "happy": 5.4692394769517705e-05,
+            "sad": 2.1371891498565674,
+            "surprise": 0.0001879303017631173,
+            "neutral": 0.01587461307644844
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 3.8141720294952393,
+            "Man": 96.18582153320312
+          },
+          "region": {
+            "x": 552,
+            "y": 1025,
+            "w": 167,
+            "h": 169,
+            "left_eye": null,
+            "right_eye": null
+          }
+        },
+        {
+          "rostro_id": 1,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.01447984203696251,
+            "disgust": 3.1465850724998745e-07,
+            "fear": 0.0031151985749602318,
+            "happy": 99.92964935302734,
+            "sad": 0.026641421020030975,
+            "surprise": 0.001897488022223115,
+            "neutral": 0.02421991527080536
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 92.98001098632812,
+            "Man": 7.019989967346191
+          },
+          "region": {
+            "x": 242,
+            "y": 336,
+            "w": 335,
+            "h": 335,
+            "left_eye": [
+              399,
+              606
+            ],
+            "right_eye": [
+              343,
+              446
+            ]
+          }
+        },
+        {
+          "rostro_id": 2,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.10184483975172043,
+            "disgust": 2.1919078151914212e-13,
+            "fear": 1.5543885231018066,
+            "happy": 8.990718924906105e-06,
+            "sad": 20.058197021484375,
+            "surprise": 9.533835054753581e-07,
+            "neutral": 78.28556060791016
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 22.51962661743164,
+            "Man": 77.48037719726562
+          },
+          "region": {
+            "x": 320,
+            "y": 642,
+            "w": 155,
+            "h": 155,
+            "left_eye": null,
+            "right_eye": null
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00046.jpg"
+    },
+    {
+      "frame_name": "frame_00047.jpg",
+      "frame_number": 47,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.9843463897705078,
+            "disgust": 0.037016142159700394,
+            "fear": 19.41401481628418,
+            "happy": 55.38808059692383,
+            "sad": 9.832402229309082,
+            "surprise": 0.08468098193407059,
+            "neutral": 14.25946044921875
+          },
+          "edad": 35,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 57.5152702331543,
+            "Man": 42.48472595214844
+          },
+          "region": {
+            "x": 274,
+            "y": 354,
+            "w": 318,
+            "h": 318,
+            "left_eye": [
+              435,
+              601
+            ],
+            "right_eye": [
+              380,
+              459
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00047.jpg"
+    },
+    {
+      "frame_name": "frame_00048.jpg",
+      "frame_number": 48,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.00040345077286474407,
+            "disgust": 4.240651833242737e-05,
+            "fear": 0.13416525721549988,
+            "happy": 49.66177749633789,
+            "sad": 0.6471747159957886,
+            "surprise": 0.00195741537027061,
+            "neutral": 49.55448913574219
+          },
+          "edad": 40,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 52.31681442260742,
+            "Man": 47.68318176269531
+          },
+          "region": {
+            "x": 287,
+            "y": 377,
+            "w": 309,
+            "h": 309,
+            "left_eye": [
+              433,
+              623
+            ],
+            "right_eye": [
+              392,
+              481
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00048.jpg"
+    },
+    {
+      "frame_name": "frame_00049.jpg",
+      "frame_number": 49,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.014450397342443466,
+            "disgust": 4.77750290883705e-07,
+            "fear": 0.14164641499519348,
+            "happy": 0.023112358525395393,
+            "sad": 0.05029939115047455,
+            "surprise": 0.27204641699790955,
+            "neutral": 99.49844360351562
+          },
+          "edad": 23,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.12425298243761063,
+            "Man": 99.87574768066406
+          },
+          "region": {
+            "x": 301,
+            "y": 392,
+            "w": 297,
+            "h": 297,
+            "left_eye": [
+              508,
+              499
+            ],
+            "right_eye": [
+              398,
+              489
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00049.jpg"
+    },
+    {
+      "frame_name": "frame_00050.jpg",
+      "frame_number": 50,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 1.8814890384674072,
+            "disgust": 0.001939471228979528,
+            "fear": 10.397103309631348,
+            "happy": 12.476225852966309,
+            "sad": 0.3461748957633972,
+            "surprise": 33.85236358642578,
+            "neutral": 41.044708251953125
+          },
+          "edad": 23,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.20418472588062286,
+            "Man": 99.79582214355469
+          },
+          "region": {
+            "x": 302,
+            "y": 384,
+            "w": 293,
+            "h": 293,
+            "left_eye": [
+              510,
+              494
+            ],
+            "right_eye": [
+              401,
+              481
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00050.jpg"
+    },
+    {
+      "frame_name": "frame_00051.jpg",
+      "frame_number": 51,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "angry",
+          "emociones": {
+            "angry": 63.18037414550781,
+            "disgust": 2.0120439529418945,
+            "fear": 11.33456802368164,
+            "happy": 3.5479931831359863,
+            "sad": 6.3961052894592285,
+            "surprise": 2.764005661010742,
+            "neutral": 10.764913558959961
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.5566310286521912,
+            "Man": 99.44336700439453
+          },
+          "region": {
+            "x": 302,
+            "y": 362,
+            "w": 293,
+            "h": 293,
+            "left_eye": [
+              505,
+              468
+            ],
+            "right_eye": [
+              394,
+              452
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00051.jpg"
+    },
+    {
+      "frame_name": "frame_00052.jpg",
+      "frame_number": 52,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 1.8313751297682757e-06,
+            "disgust": 3.402555171922166e-17,
+            "fear": 7.809048111084849e-05,
+            "happy": 99.99992370605469,
+            "sad": 1.0608115275090313e-08,
+            "surprise": 1.0857008651485311e-12,
+            "neutral": 3.088901507908304e-07
+          },
+          "edad": 33,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 16.503480911254883,
+            "Man": 83.49651336669922
+          },
+          "region": {
+            "x": 264,
+            "y": 345,
+            "w": 313,
+            "h": 313,
+            "left_eye": [
+              484,
+              462
+            ],
+            "right_eye": [
+              414,
+              581
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00052.jpg"
+    },
+    {
+      "frame_name": "frame_00053.jpg",
+      "frame_number": 53,
+      "num_rostros": 2,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.4379092752933502,
+            "disgust": 1.0754432067106023e-11,
+            "fear": 0.04973143711686134,
+            "happy": 0.0018171115079894662,
+            "sad": 1.122153401374817,
+            "surprise": 5.5936765420483425e-05,
+            "neutral": 98.3883285522461
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 23.505264282226562,
+            "Man": 76.4947280883789
+          },
+          "region": {
+            "x": 340,
+            "y": 682,
+            "w": 139,
+            "h": 139,
+            "left_eye": null,
+            "right_eye": null
+          }
+        },
+        {
+          "rostro_id": 1,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.06512649357318878,
+            "disgust": 0.00028493721038103104,
+            "fear": 0.0841280147433281,
+            "happy": 72.13871002197266,
+            "sad": 1.076479196548462,
+            "surprise": 0.001967567251995206,
+            "neutral": 26.6333065032959
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 86.75794219970703,
+            "Man": 13.242056846618652
+          },
+          "region": {
+            "x": 251,
+            "y": 353,
+            "w": 352,
+            "h": 352,
+            "left_eye": [
+              415,
+              626
+            ],
+            "right_eye": [
+              363,
+              467
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00053.jpg"
+    },
+    {
+      "frame_name": "frame_00054.jpg",
+      "frame_number": 54,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.02842136286199093,
+            "disgust": 6.671836416671795e-08,
+            "fear": 0.1297733187675476,
+            "happy": 5.5804524421691895,
+            "sad": 0.44861164689064026,
+            "surprise": 0.00031548901461064816,
+            "neutral": 93.81243133544922
+          },
+          "edad": 35,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 25.226238250732422,
+            "Man": 74.77375793457031
+          },
+          "region": {
+            "x": 236,
+            "y": 328,
+            "w": 384,
+            "h": 384,
+            "left_eye": [
+              502,
+              476
+            ],
+            "right_eye": [
+              409,
+              659
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00054.jpg"
+    },
+    {
+      "frame_name": "frame_00055.jpg",
+      "frame_number": 55,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 6.5398173332214355,
+            "disgust": 0.0011552507057785988,
+            "fear": 25.6464900970459,
+            "happy": 0.13150781393051147,
+            "sad": 18.30495834350586,
+            "surprise": 0.0017479065572842956,
+            "neutral": 49.374324798583984
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.047211065888404846,
+            "Man": 99.95278930664062
+          },
+          "region": {
+            "x": 239,
+            "y": 345,
+            "w": 385,
+            "h": 385,
+            "left_eye": [
+              508,
+              490
+            ],
+            "right_eye": [
+              358,
+              473
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00055.jpg"
+    },
+    {
+      "frame_name": "frame_00056.jpg",
+      "frame_number": 56,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "sad",
+          "emociones": {
+            "angry": 1.1921965779038146e-06,
+            "disgust": 7.034891419399614e-11,
+            "fear": 0.02062945067882538,
+            "happy": 0.002266337862238288,
+            "sad": 86.2857666015625,
+            "surprise": 9.738789330526743e-09,
+            "neutral": 13.691343307495117
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 80.62173461914062,
+            "Man": 19.378257751464844
+          },
+          "region": {
+            "x": 239,
+            "y": 343,
+            "w": 403,
+            "h": 403,
+            "left_eye": [
+              417,
+              671
+            ],
+            "right_eye": [
+              364,
+              479
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00056.jpg"
+    },
+    {
+      "frame_name": "frame_00057.jpg",
+      "frame_number": 57,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0008042313857004046,
+            "disgust": 5.966704065940576e-06,
+            "fear": 1.277312994003296,
+            "happy": 41.47246170043945,
+            "sad": 15.32101058959961,
+            "surprise": 0.0023859080392867327,
+            "neutral": 41.926021575927734
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 57.93071365356445,
+            "Man": 42.06928253173828
+          },
+          "region": {
+            "x": 241,
+            "y": 344,
+            "w": 386,
+            "h": 386,
+            "left_eye": [
+              408,
+              652
+            ],
+            "right_eye": [
+              363,
+              475
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00057.jpg"
+    },
+    {
+      "frame_name": "frame_00058.jpg",
+      "frame_number": 58,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.01044018380343914,
+            "disgust": 2.7853896966689717e-08,
+            "fear": 0.582856297492981,
+            "happy": 0.09018074721097946,
+            "sad": 0.19103676080703735,
+            "surprise": 0.0013167349388822913,
+            "neutral": 99.1241683959961
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.1310453712940216,
+            "Man": 99.86895751953125
+          },
+          "region": {
+            "x": 251,
+            "y": 341,
+            "w": 385,
+            "h": 385,
+            "left_eye": [
+              513,
+              487
+            ],
+            "right_eye": [
+              376,
+              474
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00058.jpg"
+    },
+    {
+      "frame_name": "frame_00059.jpg",
+      "frame_number": 59,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 3.3847999572753906,
+            "disgust": 4.910197276331019e-06,
+            "fear": 1.3077529668807983,
+            "happy": 12.210166931152344,
+            "sad": 1.1236783266067505,
+            "surprise": 0.0030882004648447037,
+            "neutral": 81.97051239013672
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 23.290241241455078,
+            "Man": 76.70976257324219
+          },
+          "region": {
+            "x": 252,
+            "y": 348,
+            "w": 362,
+            "h": 362,
+            "left_eye": [
+              500,
+              479
+            ],
+            "right_eye": [
+              417,
+              636
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00059.jpg"
+    },
+    {
+      "frame_name": "frame_00060.jpg",
+      "frame_number": 60,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 2.397050142288208,
+            "disgust": 0.00836026668548584,
+            "fear": 6.034520149230957,
+            "happy": 0.4943890869617462,
+            "sad": 2.1978025436401367,
+            "surprise": 0.11333338171243668,
+            "neutral": 88.75454711914062
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.232493594288826,
+            "Man": 99.76750946044922
+          },
+          "region": {
+            "x": 254,
+            "y": 354,
+            "w": 348,
+            "h": 348,
+            "left_eye": [
+              491,
+              475
+            ],
+            "right_eye": [
+              359,
+              470
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00060.jpg"
+    },
+    {
+      "frame_name": "frame_00061.jpg",
+      "frame_number": 61,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 1.531951904296875,
+            "disgust": 0.0012007644400000572,
+            "fear": 0.32380470633506775,
+            "happy": 1.7417339086532593,
+            "sad": 0.24294403195381165,
+            "surprise": 1.533301591873169,
+            "neutral": 94.62506103515625
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.28705936670303345,
+            "Man": 99.71293640136719
+          },
+          "region": {
+            "x": 233,
+            "y": 349,
+            "w": 366,
+            "h": 366,
+            "left_eye": [
+              478,
+              478
+            ],
+            "right_eye": [
+              344,
+              476
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00061.jpg"
+    },
+    {
+      "frame_name": "frame_00062.jpg",
+      "frame_number": 62,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "angry",
+          "emociones": {
+            "angry": 38.77392578125,
+            "disgust": 6.842252731323242,
+            "fear": 34.10956573486328,
+            "happy": 1.2519179582595825,
+            "sad": 4.432934761047363,
+            "surprise": 1.6229772567749023,
+            "neutral": 12.966431617736816
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.19069984555244446,
+            "Man": 99.80929565429688
+          },
+          "region": {
+            "x": 222,
+            "y": 343,
+            "w": 359,
+            "h": 359,
+            "left_eye": [
+              463,
+              463
+            ],
+            "right_eye": [
+              323,
+              464
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00062.jpg"
+    },
+    {
+      "frame_name": "frame_00063.jpg",
+      "frame_number": 63,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "sad",
+          "emociones": {
+            "angry": 1.2082899957022164e-05,
+            "disgust": 1.5790151033489436e-13,
+            "fear": 3.091343879699707,
+            "happy": 3.924254997400567e-06,
+            "sad": 92.29093933105469,
+            "surprise": 1.3191675529711233e-10,
+            "neutral": 4.617702960968018
+          },
+          "edad": 33,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 31.045150756835938,
+            "Man": 68.95484161376953
+          },
+          "region": {
+            "x": 208,
+            "y": 317,
+            "w": 393,
+            "h": 393,
+            "left_eye": [
+              389,
+              542
+            ],
+            "right_eye": [
+              392,
+              635
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00063.jpg"
+    },
+    {
+      "frame_name": "frame_00064.jpg",
+      "frame_number": 64,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.34538814425468445,
+            "disgust": 3.019067378318141e-07,
+            "fear": 0.7595272064208984,
+            "happy": 49.02225875854492,
+            "sad": 1.8249481916427612,
+            "surprise": 0.002714139875024557,
+            "neutral": 48.04515838623047
+          },
+          "edad": 33,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 16.97046661376953,
+            "Man": 83.02953338623047
+          },
+          "region": {
+            "x": 221,
+            "y": 322,
+            "w": 372,
+            "h": 372,
+            "left_eye": [
+              455,
+              400
+            ],
+            "right_eye": [
+              390,
+              625
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00064.jpg"
+    },
+    {
+      "frame_name": "frame_00065.jpg",
+      "frame_number": 65,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 2.760185956954956,
+            "disgust": 5.069068265584065e-06,
+            "fear": 2.118828296661377,
+            "happy": 68.40131378173828,
+            "sad": 5.647451877593994,
+            "surprise": 2.4146556825144216e-05,
+            "neutral": 21.072195053100586
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 17.79859161376953,
+            "Man": 82.20140838623047
+          },
+          "region": {
+            "x": 193,
+            "y": 320,
+            "w": 404,
+            "h": 404,
+            "left_eye": [
+              474,
+              470
+            ],
+            "right_eye": [
+              382,
+              650
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00065.jpg"
+    },
+    {
+      "frame_name": "frame_00066.jpg",
+      "frame_number": 66,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 26.221839904785156,
+            "disgust": 19.967830657958984,
+            "fear": 29.376035690307617,
+            "happy": 4.576265335083008,
+            "sad": 1.6787196397781372,
+            "surprise": 16.51036834716797,
+            "neutral": 1.6689478158950806
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.08358222246170044,
+            "Man": 99.91641998291016
+          },
+          "region": {
+            "x": 181,
+            "y": 308,
+            "w": 413,
+            "h": 413,
+            "left_eye": [
+              467,
+              456
+            ],
+            "right_eye": [
+              304,
+              445
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00066.jpg"
+    },
+    {
+      "frame_name": "frame_00067.jpg",
+      "frame_number": 67,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 7.06046724319458,
+            "disgust": 0.02798665687441826,
+            "fear": 9.821818351745605,
+            "happy": 0.19667115807533264,
+            "sad": 4.828315734863281,
+            "surprise": 0.02820621244609356,
+            "neutral": 78.03653717041016
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.11895449459552765,
+            "Man": 99.88104248046875
+          },
+          "region": {
+            "x": 175,
+            "y": 304,
+            "w": 422,
+            "h": 422,
+            "left_eye": [
+              464,
+              457
+            ],
+            "right_eye": [
+              302,
+              446
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00067.jpg"
+    },
+    {
+      "frame_name": "frame_00068.jpg",
+      "frame_number": 68,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "surprise",
+          "emociones": {
+            "angry": 2.335320234298706,
+            "disgust": 0.001220290781930089,
+            "fear": 2.613924741744995,
+            "happy": 0.010311037302017212,
+            "sad": 0.026252077892422676,
+            "surprise": 94.69578552246094,
+            "neutral": 0.3171912431716919
+          },
+          "edad": 29,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.1544981598854065,
+            "Man": 99.84550476074219
+          },
+          "region": {
+            "x": 200,
+            "y": 300,
+            "w": 409,
+            "h": 409,
+            "left_eye": [
+              479,
+              449
+            ],
+            "right_eye": [
+              323,
+              439
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00068.jpg"
+    },
+    {
+      "frame_name": "frame_00069.jpg",
+      "frame_number": 69,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.029048513621091843,
+            "disgust": 3.168677409348675e-08,
+            "fear": 0.09956127405166626,
+            "happy": 0.004463767167180777,
+            "sad": 0.2633369266986847,
+            "surprise": 0.0007692771032452583,
+            "neutral": 99.60282135009766
+          },
+          "edad": 29,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.6359018683433533,
+            "Man": 99.36409759521484
+          },
+          "region": {
+            "x": 225,
+            "y": 320,
+            "w": 374,
+            "h": 374,
+            "left_eye": [
+              481,
+              453
+            ],
+            "right_eye": [
+              341,
+              441
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00069.jpg"
+    },
+    {
+      "frame_name": "frame_00070.jpg",
+      "frame_number": 70,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0014101731358096004,
+            "disgust": 3.494454281494086e-09,
+            "fear": 0.06786169856786728,
+            "happy": 0.03123486042022705,
+            "sad": 0.056211430579423904,
+            "surprise": 0.001052628387697041,
+            "neutral": 99.84222412109375
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.45790189504623413,
+            "Man": 99.54209899902344
+          },
+          "region": {
+            "x": 227,
+            "y": 389,
+            "w": 335,
+            "h": 335,
+            "left_eye": [
+              467,
+              488
+            ],
+            "right_eye": [
+              331,
+              478
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00070.jpg"
+    },
+    {
+      "frame_name": "frame_00071.jpg",
+      "frame_number": 71,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.10787628591060638,
+            "disgust": 3.745147125755466e-07,
+            "fear": 0.5985003709793091,
+            "happy": 0.04493875429034233,
+            "sad": 0.32245391607284546,
+            "surprise": 0.0008804724202491343,
+            "neutral": 98.92534637451172
+          },
+          "edad": 28,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.7299726605415344,
+            "Man": 99.27002716064453
+          },
+          "region": {
+            "x": 213,
+            "y": 345,
+            "w": 363,
+            "h": 363,
+            "left_eye": [
+              459,
+              478
+            ],
+            "right_eye": [
+              328,
+              470
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00071.jpg"
+    },
+    {
+      "frame_name": "frame_00072.jpg",
+      "frame_number": 72,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.4282677173614502,
+            "disgust": 0.00011456415813881904,
+            "fear": 4.221068382263184,
+            "happy": 95.04644012451172,
+            "sad": 0.06295470893383026,
+            "surprise": 0.23383548855781555,
+            "neutral": 0.007317952811717987
+          },
+          "edad": 33,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 7.707873821258545,
+            "Man": 92.29212951660156
+          },
+          "region": {
+            "x": 240,
+            "y": 330,
+            "w": 344,
+            "h": 344,
+            "left_eye": [
+              479,
+              452
+            ],
+            "right_eye": [
+              411,
+              515
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00072.jpg"
+    },
+    {
+      "frame_name": "frame_00073.jpg",
+      "frame_number": 73,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 0.005228632595390081,
+            "disgust": 3.9808475960079193e-10,
+            "fear": 76.03569793701172,
+            "happy": 15.085345268249512,
+            "sad": 8.605489730834961,
+            "surprise": 6.331488666688756e-10,
+            "neutral": 0.2682415246963501
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 28.221717834472656,
+            "Man": 71.77828979492188
+          },
+          "region": {
+            "x": 262,
+            "y": 334,
+            "w": 328,
+            "h": 328,
+            "left_eye": [
+              430,
+              492
+            ],
+            "right_eye": [
+              412,
+              578
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00073.jpg"
+    },
+    {
+      "frame_name": "frame_00074.jpg",
+      "frame_number": 74,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "angry",
+          "emociones": {
+            "angry": 44.66587448120117,
+            "disgust": 42.22837829589844,
+            "fear": 8.049785614013672,
+            "happy": 0.2541443705558777,
+            "sad": 1.2755268812179565,
+            "surprise": 2.9787516593933105,
+            "neutral": 0.5475443601608276
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.4820345342159271,
+            "Man": 99.5179672241211
+          },
+          "region": {
+            "x": 232,
+            "y": 341,
+            "w": 333,
+            "h": 333,
+            "left_eye": [
+              462,
+              456
+            ],
+            "right_eye": [
+              336,
+              448
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00074.jpg"
+    },
+    {
+      "frame_name": "frame_00075.jpg",
+      "frame_number": 75,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "surprise",
+          "emociones": {
+            "angry": 2.268892526626587,
+            "disgust": 0.0368649996817112,
+            "fear": 24.176132202148438,
+            "happy": 0.3526095151901245,
+            "sad": 0.10328348726034164,
+            "surprise": 71.767822265625,
+            "neutral": 1.294395089149475
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.19200505316257477,
+            "Man": 99.80799102783203
+          },
+          "region": {
+            "x": 230,
+            "y": 351,
+            "w": 334,
+            "h": 334,
+            "left_eye": [
+              463,
+              466
+            ],
+            "right_eye": [
+              334,
+              456
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00075.jpg"
+    },
+    {
+      "frame_name": "frame_00076.jpg",
+      "frame_number": 76,
+      "num_rostros": 2,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.009138217195868492,
+            "disgust": 4.3796546657327504e-14,
+            "fear": 0.011081966571509838,
+            "happy": 4.46869307779707e-05,
+            "sad": 0.3092007040977478,
+            "surprise": 1.2390432857500855e-06,
+            "neutral": 99.6705322265625
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 17.011295318603516,
+            "Man": 82.98870849609375
+          },
+          "region": {
+            "x": 339,
+            "y": 686,
+            "w": 113,
+            "h": 113,
+            "left_eye": null,
+            "right_eye": null
+          }
+        },
+        {
+          "rostro_id": 1,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 5.3842315673828125,
+            "disgust": 4.8950711061479524e-05,
+            "fear": 1.5490608215332031,
+            "happy": 81.62947082519531,
+            "sad": 0.19082532823085785,
+            "surprise": 11.115118980407715,
+            "neutral": 0.13124004006385803
+          },
+          "edad": 30,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 9.369487762451172,
+            "Man": 90.6305160522461
+          },
+          "region": {
+            "x": 245,
+            "y": 343,
+            "w": 347,
+            "h": 347,
+            "left_eye": [
+              484,
+              466
+            ],
+            "right_eye": [
+              413,
+              537
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00076.jpg"
+    },
+    {
+      "frame_name": "frame_00077.jpg",
+      "frame_number": 77,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 2.1036553382873535,
+            "disgust": 0.01865745708346367,
+            "fear": 11.429278373718262,
+            "happy": 81.76860046386719,
+            "sad": 3.8294763565063477,
+            "surprise": 0.13865910470485687,
+            "neutral": 0.7116804718971252
+          },
+          "edad": 36,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 88.32238006591797,
+            "Man": 11.67761516571045
+          },
+          "region": {
+            "x": 261,
+            "y": 356,
+            "w": 353,
+            "h": 353,
+            "left_eye": [
+              432,
+              633
+            ],
+            "right_eye": [
+              371,
+              466
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00077.jpg"
+    },
+    {
+      "frame_name": "frame_00078.jpg",
+      "frame_number": 78,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "angry",
+          "emociones": {
+            "angry": 34.91064453125,
+            "disgust": 22.2955265045166,
+            "fear": 24.26809310913086,
+            "happy": 7.5052900314331055,
+            "sad": 2.6078968048095703,
+            "surprise": 2.6967432498931885,
+            "neutral": 5.715812683105469
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.13055384159088135,
+            "Man": 99.86944580078125
+          },
+          "region": {
+            "x": 278,
+            "y": 365,
+            "w": 352,
+            "h": 352,
+            "left_eye": [
+              522,
+              492
+            ],
+            "right_eye": [
+              387,
+              476
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00078.jpg"
+    },
+    {
+      "frame_name": "frame_00079.jpg",
+      "frame_number": 79,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.16282735764980316,
+            "disgust": 6.726381252519786e-05,
+            "fear": 15.196840286254883,
+            "happy": 0.16376672685146332,
+            "sad": 34.41829299926758,
+            "surprise": 0.0012732483446598053,
+            "neutral": 50.05692672729492
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 74.49357604980469,
+            "Man": 25.506427764892578
+          },
+          "region": {
+            "x": 268,
+            "y": 359,
+            "w": 371,
+            "h": 371,
+            "left_eye": [
+              434,
+              657
+            ],
+            "right_eye": [
+              381,
+              480
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00079.jpg"
+    },
+    {
+      "frame_name": "frame_00080.jpg",
+      "frame_number": 80,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 9.941902160644531,
+            "disgust": 0.00020451319869607687,
+            "fear": 46.48130416870117,
+            "happy": 7.371970176696777,
+            "sad": 33.95037078857422,
+            "surprise": 0.008695327676832676,
+            "neutral": 2.245547294616699
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 71.2623291015625,
+            "Man": 28.7376766204834
+          },
+          "region": {
+            "x": 258,
+            "y": 363,
+            "w": 365,
+            "h": 365,
+            "left_eye": [
+              417,
+              663
+            ],
+            "right_eye": [
+              369,
+              479
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00080.jpg"
+    },
+    {
+      "frame_name": "frame_00081.jpg",
+      "frame_number": 81,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.007525154855102301,
+            "disgust": 0.003313097869977355,
+            "fear": 0.08391629904508591,
+            "happy": 0.7667854428291321,
+            "sad": 19.694120407104492,
+            "surprise": 0.0005223571206443012,
+            "neutral": 79.44381713867188
+          },
+          "edad": 31,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 59.041160583496094,
+            "Man": 40.95884704589844
+          },
+          "region": {
+            "x": 234,
+            "y": 344,
+            "w": 387,
+            "h": 387,
+            "left_eye": [
+              409,
+              655
+            ],
+            "right_eye": [
+              356,
+              475
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00081.jpg"
+    },
+    {
+      "frame_name": "frame_00082.jpg",
+      "frame_number": 82,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.039518289268016815,
+            "disgust": 9.2619423242013e-10,
+            "fear": 0.01590120606124401,
+            "happy": 46.07853317260742,
+            "sad": 0.21469108760356903,
+            "surprise": 4.831520517001309e-09,
+            "neutral": 53.65135955810547
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 40.20457077026367,
+            "Man": 59.79542541503906
+          },
+          "region": {
+            "x": 243,
+            "y": 340,
+            "w": 379,
+            "h": 379,
+            "left_eye": [
+              498,
+              476
+            ],
+            "right_eye": [
+              414,
+              635
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00082.jpg"
+    },
+    {
+      "frame_name": "frame_00083.jpg",
+      "frame_number": 83,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.0032513048499822617,
+            "disgust": 2.8855113853865078e-09,
+            "fear": 0.023123478516936302,
+            "happy": 99.97291564941406,
+            "sad": 0.0004290693032089621,
+            "surprise": 8.805119300347997e-09,
+            "neutral": 0.0002794874308165163
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 37.33186340332031,
+            "Man": 62.66813278198242
+          },
+          "region": {
+            "x": 245,
+            "y": 342,
+            "w": 363,
+            "h": 363,
+            "left_eye": [
+              498,
+              473
+            ],
+            "right_eye": [
+              414,
+              615
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00083.jpg"
+    },
+    {
+      "frame_name": "frame_00084.jpg",
+      "frame_number": 84,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 1.4986459063948132e-05,
+            "disgust": 2.1768109093045496e-08,
+            "fear": 0.0006282409885898232,
+            "happy": 0.24052424728870392,
+            "sad": 13.841724395751953,
+            "surprise": 7.490248208341654e-07,
+            "neutral": 85.91710662841797
+          },
+          "edad": 31,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 76.58741760253906,
+            "Man": 23.41257667541504
+          },
+          "region": {
+            "x": 231,
+            "y": 343,
+            "w": 378,
+            "h": 378,
+            "left_eye": [
+              399,
+              636
+            ],
+            "right_eye": [
+              346,
+              470
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00084.jpg"
+    },
+    {
+      "frame_name": "frame_00085.jpg",
+      "frame_number": 85,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.40446972846984863,
+            "disgust": 2.8031463372713006e-08,
+            "fear": 0.018648728728294373,
+            "happy": 46.093231201171875,
+            "sad": 0.19011728465557098,
+            "surprise": 7.405044470942812e-07,
+            "neutral": 53.29353332519531
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 24.98415184020996,
+            "Man": 75.0158462524414
+          },
+          "region": {
+            "x": 228,
+            "y": 339,
+            "w": 398,
+            "h": 398,
+            "left_eye": [
+              494,
+              481
+            ],
+            "right_eye": [
+              407,
+              659
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00085.jpg"
+    },
+    {
+      "frame_name": "frame_00086.jpg",
+      "frame_number": 86,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.10871649533510208,
+            "disgust": 1.6545939161005663e-06,
+            "fear": 0.3891366422176361,
+            "happy": 0.018254810944199562,
+            "sad": 0.422956258058548,
+            "surprise": 0.003968368750065565,
+            "neutral": 99.05696868896484
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.3143467903137207,
+            "Man": 99.68565368652344
+          },
+          "region": {
+            "x": 218,
+            "y": 332,
+            "w": 398,
+            "h": 398,
+            "left_eye": [
+              485,
+              474
+            ],
+            "right_eye": [
+              338,
+              468
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00086.jpg"
+    },
+    {
+      "frame_name": "frame_00087.jpg",
+      "frame_number": 87,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 0.011108221486210823,
+            "disgust": 1.528772145320545e-06,
+            "fear": 98.68238067626953,
+            "happy": 0.006328585557639599,
+            "sad": 0.8469217419624329,
+            "surprise": 0.013666082173585892,
+            "neutral": 0.4395884871482849
+          },
+          "edad": 36,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 21.758750915527344,
+            "Man": 78.24124908447266
+          },
+          "region": {
+            "x": 255,
+            "y": 325,
+            "w": 352,
+            "h": 352,
+            "left_eye": [
+              446,
+              507
+            ],
+            "right_eye": [
+              355,
+              432
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00087.jpg"
+    },
+    {
+      "frame_name": "frame_00088.jpg",
+      "frame_number": 88,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 3.1637039184570312,
+            "disgust": 1.2947885807079729e-05,
+            "fear": 70.58949279785156,
+            "happy": 0.04605503007769585,
+            "sad": 0.3482740521430969,
+            "surprise": 7.965203762054443,
+            "neutral": 17.887252807617188
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.46050235629081726,
+            "Man": 99.53949737548828
+          },
+          "region": {
+            "x": 208,
+            "y": 338,
+            "w": 341,
+            "h": 341,
+            "left_eye": [
+              437,
+              453
+            ],
+            "right_eye": [
+              304,
+              460
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00088.jpg"
+    },
+    {
+      "frame_name": "frame_00089.jpg",
+      "frame_number": 89,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 0.13952960073947906,
+            "disgust": 1.1218621587261168e-08,
+            "fear": 56.52889633178711,
+            "happy": 0.012363669462502003,
+            "sad": 0.10670675337314606,
+            "surprise": 5.068111419677734,
+            "neutral": 38.14439392089844
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.3406473994255066,
+            "Man": 99.65935516357422
+          },
+          "region": {
+            "x": 215,
+            "y": 350,
+            "w": 341,
+            "h": 341,
+            "left_eye": [
+              442,
+              459
+            ],
+            "right_eye": [
+              309,
+              467
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00089.jpg"
+    },
+    {
+      "frame_name": "frame_00090.jpg",
+      "frame_number": 90,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 6.916570418979973e-05,
+            "disgust": 5.040944994760821e-09,
+            "fear": 0.00010101308726007119,
+            "happy": 0.004855103325098753,
+            "sad": 3.2702066898345947,
+            "surprise": 1.8125646761291136e-07,
+            "neutral": 96.72476959228516
+          },
+          "edad": 31,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 70.93242645263672,
+            "Man": 29.067575454711914
+          },
+          "region": {
+            "x": 215,
+            "y": 344,
+            "w": 333,
+            "h": 333,
+            "left_eye": [
+              374,
+              593
+            ],
+            "right_eye": [
+              312,
+              458
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00090.jpg"
+    },
+    {
+      "frame_name": "frame_00091.jpg",
+      "frame_number": 91,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "surprise",
+          "emociones": {
+            "angry": 30.98511505126953,
+            "disgust": 26.966611862182617,
+            "fear": 5.318997859954834,
+            "happy": 1.3140383958816528,
+            "sad": 0.28758159279823303,
+            "surprise": 35.05931091308594,
+            "neutral": 0.06835106015205383
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.20446737110614777,
+            "Man": 99.7955322265625
+          },
+          "region": {
+            "x": 213,
+            "y": 384,
+            "w": 274,
+            "h": 274,
+            "left_eye": [
+              411,
+              453
+            ],
+            "right_eye": [
+              288,
+              455
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00091.jpg"
+    },
+    {
+      "frame_name": "frame_00092.jpg",
+      "frame_number": 92,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 2.9034386898274533e-05,
+            "disgust": 6.7677322621896574e-15,
+            "fear": 0.0002996582770720124,
+            "happy": 99.99966430664062,
+            "sad": 4.940345206705388e-06,
+            "surprise": 8.483440512574436e-12,
+            "neutral": 7.851726309127116e-07
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 19.1294002532959,
+            "Man": 80.87059783935547
+          },
+          "region": {
+            "x": 209,
+            "y": 364,
+            "w": 335,
+            "h": 335,
+            "left_eye": [
+              446,
+              485
+            ],
+            "right_eye": [
+              360,
+              627
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00092.jpg"
+    },
+    {
+      "frame_name": "frame_00093.jpg",
+      "frame_number": 93,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 37.61598205566406,
+            "disgust": 0.029398398473858833,
+            "fear": 16.239103317260742,
+            "happy": 0.025582872331142426,
+            "sad": 4.9335503578186035,
+            "surprise": 1.2199715375900269,
+            "neutral": 39.9364128112793
+          },
+          "edad": 24,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.1441347897052765,
+            "Man": 99.85587310791016
+          },
+          "region": {
+            "x": 218,
+            "y": 353,
+            "w": 344,
+            "h": 344,
+            "left_eye": [
+              458,
+              478
+            ],
+            "right_eye": [
+              324,
+              464
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00093.jpg"
+    },
+    {
+      "frame_name": "frame_00094.jpg",
+      "frame_number": 94,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0011478635715320706,
+            "disgust": 9.305845338758445e-08,
+            "fear": 0.027394020929932594,
+            "happy": 4.472318649291992,
+            "sad": 0.5340371131896973,
+            "surprise": 0.0007205128786154091,
+            "neutral": 94.9643783569336
+          },
+          "edad": 31,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 24.69684410095215,
+            "Man": 75.30315399169922
+          },
+          "region": {
+            "x": 225,
+            "y": 348,
+            "w": 357,
+            "h": 357,
+            "left_eye": [
+              470,
+              478
+            ],
+            "right_eye": [
+              389,
+              631
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00094.jpg"
+    },
+    {
+      "frame_name": "frame_00095.jpg",
+      "frame_number": 95,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 6.4881415367126465,
+            "disgust": 0.0019512815633788705,
+            "fear": 20.881118774414062,
+            "happy": 0.8711466789245605,
+            "sad": 4.881312847137451,
+            "surprise": 0.07663246989250183,
+            "neutral": 66.79969787597656
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.32864856719970703,
+            "Man": 99.67134857177734
+          },
+          "region": {
+            "x": 217,
+            "y": 337,
+            "w": 377,
+            "h": 377,
+            "left_eye": [
+              474,
+              466
+            ],
+            "right_eye": [
+              330,
+              462
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00095.jpg"
+    },
+    {
+      "frame_name": "frame_00096.jpg",
+      "frame_number": 96,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "disgust",
+          "emociones": {
+            "angry": 10.940988540649414,
+            "disgust": 76.78387451171875,
+            "fear": 9.295181274414062,
+            "happy": 0.16158945858478546,
+            "sad": 0.2546406388282776,
+            "surprise": 2.4769773483276367,
+            "neutral": 0.08674322813749313
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.1253392994403839,
+            "Man": 99.87466430664062
+          },
+          "region": {
+            "x": 227,
+            "y": 352,
+            "w": 365,
+            "h": 365,
+            "left_eye": [
+              481,
+              471
+            ],
+            "right_eye": [
+              334,
+              466
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00096.jpg"
+    },
+    {
+      "frame_name": "frame_00097.jpg",
+      "frame_number": 97,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 1.2402988147641736e-07,
+            "disgust": 2.2778843047910335e-11,
+            "fear": 2.4656328605487943e-06,
+            "happy": 6.0504889488220215,
+            "sad": 0.035601262003183365,
+            "surprise": 1.5701987194916e-06,
+            "neutral": 93.91390991210938
+          },
+          "edad": 30,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 88.34232330322266,
+            "Man": 11.657672882080078
+          },
+          "region": {
+            "x": 220,
+            "y": 324,
+            "w": 391,
+            "h": 391,
+            "left_eye": [
+              401,
+              636
+            ],
+            "right_eye": [
+              334,
+              460
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00097.jpg"
+    },
+    {
+      "frame_name": "frame_00098.jpg",
+      "frame_number": 98,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.010340536013245583,
+            "disgust": 5.121697540744208e-06,
+            "fear": 0.1690278947353363,
+            "happy": 99.81101989746094,
+            "sad": 0.004280545748770237,
+            "surprise": 0.0028643221594393253,
+            "neutral": 0.002462854841724038
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 9.151589393615723,
+            "Man": 90.8484115600586
+          },
+          "region": {
+            "x": 224,
+            "y": 310,
+            "w": 378,
+            "h": 378,
+            "left_eye": [
+              479,
+              437
+            ],
+            "right_eye": [
+              410,
+              507
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00098.jpg"
+    },
+    {
+      "frame_name": "frame_00099.jpg",
+      "frame_number": 99,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "angry",
+          "emociones": {
+            "angry": 55.49504089355469,
+            "disgust": 19.595693588256836,
+            "fear": 14.193267822265625,
+            "happy": 0.35761958360671997,
+            "sad": 2.810291051864624,
+            "surprise": 7.131730556488037,
+            "neutral": 0.41634634137153625
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.2582036256790161,
+            "Man": 99.74179077148438
+          },
+          "region": {
+            "x": 229,
+            "y": 325,
+            "w": 362,
+            "h": 362,
+            "left_eye": [
+              472,
+              453
+            ],
+            "right_eye": [
+              333,
+              449
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00099.jpg"
+    },
+    {
+      "frame_name": "frame_00100.jpg",
+      "frame_number": 100,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "disgust",
+          "emociones": {
+            "angry": 29.307430267333984,
+            "disgust": 59.5215950012207,
+            "fear": 5.453779697418213,
+            "happy": 0.044998958706855774,
+            "sad": 1.3241862058639526,
+            "surprise": 4.177892208099365,
+            "neutral": 0.17010650038719177
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.07624135166406631,
+            "Man": 99.92376708984375
+          },
+          "region": {
+            "x": 232,
+            "y": 346,
+            "w": 339,
+            "h": 339,
+            "left_eye": [
+              466,
+              465
+            ],
+            "right_eye": [
+              331,
+              459
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00100.jpg"
+    },
+    {
+      "frame_name": "frame_00101.jpg",
+      "frame_number": 101,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 7.223829015856609e-05,
+            "disgust": 7.916264865848177e-11,
+            "fear": 9.988952660933137e-05,
+            "happy": 0.02586972340941429,
+            "sad": 0.08351816236972809,
+            "surprise": 0.0007973513565957546,
+            "neutral": 99.8896484375
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 21.365312576293945,
+            "Man": 78.63468170166016
+          },
+          "region": {
+            "x": 219,
+            "y": 340,
+            "w": 374,
+            "h": 374,
+            "left_eye": [
+              472,
+              475
+            ],
+            "right_eye": [
+              395,
+              639
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00101.jpg"
+    },
+    {
+      "frame_name": "frame_00102.jpg",
+      "frame_number": 102,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 8.891249308362603e-05,
+            "disgust": 8.622895691749732e-13,
+            "fear": 0.000136131580802612,
+            "happy": 1.4944791793823242,
+            "sad": 0.08878903836011887,
+            "surprise": 8.440019155386835e-05,
+            "neutral": 98.41642761230469
+          },
+          "edad": 31,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 37.94826889038086,
+            "Man": 62.05173110961914
+          },
+          "region": {
+            "x": 212,
+            "y": 327,
+            "w": 383,
+            "h": 383,
+            "left_eye": [
+              397,
+              546
+            ],
+            "right_eye": [
+              328,
+              459
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00102.jpg"
+    },
+    {
+      "frame_name": "frame_00103.jpg",
+      "frame_number": 103,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.21166490018367767,
+            "disgust": 0.047372546046972275,
+            "fear": 2.57027006149292,
+            "happy": 21.046892166137695,
+            "sad": 10.857993125915527,
+            "surprise": 0.047717805951833725,
+            "neutral": 65.21809387207031
+          },
+          "edad": 37,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 88.86292266845703,
+            "Man": 11.137067794799805
+          },
+          "region": {
+            "x": 221,
+            "y": 343,
+            "w": 370,
+            "h": 370,
+            "left_eye": [
+              402,
+              635
+            ],
+            "right_eye": [
+              338,
+              465
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00103.jpg"
+    },
+    {
+      "frame_name": "frame_00104.jpg",
+      "frame_number": 104,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 1.7071611881256104,
+            "disgust": 0.019671713933348656,
+            "fear": 16.39042854309082,
+            "happy": 16.14036750793457,
+            "sad": 0.2880823016166687,
+            "surprise": 7.961802005767822,
+            "neutral": 57.49249267578125
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.13283053040504456,
+            "Man": 99.86717987060547
+          },
+          "region": {
+            "x": 270,
+            "y": 341,
+            "w": 366,
+            "h": 366,
+            "left_eye": [
+              518,
+              483
+            ],
+            "right_eye": [
+              390,
+              462
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00104.jpg"
+    },
+    {
+      "frame_name": "frame_00105.jpg",
+      "frame_number": 105,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.009714892134070396,
+            "disgust": 0.0003285684797447175,
+            "fear": 0.6678234934806824,
+            "happy": 0.5093699097633362,
+            "sad": 33.543792724609375,
+            "surprise": 0.0012733081821352243,
+            "neutral": 65.26769256591797
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 70.38573455810547,
+            "Man": 29.6142635345459
+          },
+          "region": {
+            "x": 225,
+            "y": 334,
+            "w": 384,
+            "h": 384,
+            "left_eye": [
+              399,
+              666
+            ],
+            "right_eye": [
+              348,
+              465
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00105.jpg"
+    },
+    {
+      "frame_name": "frame_00106.jpg",
+      "frame_number": 106,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 14.161248207092285,
+            "disgust": 0.022245248779654503,
+            "fear": 58.274330139160156,
+            "happy": 0.5917398929595947,
+            "sad": 4.386345386505127,
+            "surprise": 5.444060802459717,
+            "neutral": 17.120025634765625
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.059919629245996475,
+            "Man": 99.9400863647461
+          },
+          "region": {
+            "x": 192,
+            "y": 341,
+            "w": 364,
+            "h": 364,
+            "left_eye": [
+              444,
+              465
+            ],
+            "right_eye": [
+              297,
+              467
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00106.jpg"
+    },
+    {
+      "frame_name": "frame_00107.jpg",
+      "frame_number": 107,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 33.42287826538086,
+            "disgust": 0.1776430904865265,
+            "fear": 33.45341491699219,
+            "happy": 0.1427101194858551,
+            "sad": 14.22304630279541,
+            "surprise": 0.013538452796638012,
+            "neutral": 18.566770553588867
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.15707337856292725,
+            "Man": 99.84292602539062
+          },
+          "region": {
+            "x": 215,
+            "y": 344,
+            "w": 360,
+            "h": 360,
+            "left_eye": [
+              463,
+              469
+            ],
+            "right_eye": [
+              318,
+              464
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00107.jpg"
+    },
+    {
+      "frame_name": "frame_00108.jpg",
+      "frame_number": 108,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "sad",
+          "emociones": {
+            "angry": 0.11748024821281433,
+            "disgust": 0.0011002544779330492,
+            "fear": 2.6553032398223877,
+            "happy": 0.6728143692016602,
+            "sad": 84.49227142333984,
+            "surprise": 0.0024068558122962713,
+            "neutral": 12.058629035949707
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 75.31610870361328,
+            "Man": 24.683887481689453
+          },
+          "region": {
+            "x": 229,
+            "y": 338,
+            "w": 356,
+            "h": 356,
+            "left_eye": [
+              394,
+              616
+            ],
+            "right_eye": [
+              335,
+              459
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00108.jpg"
+    },
+    {
+      "frame_name": "frame_00109.jpg",
+      "frame_number": 109,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.023221582174301147,
+            "disgust": 3.532516757331905e-06,
+            "fear": 0.09673735499382019,
+            "happy": 25.243867874145508,
+            "sad": 0.5927715301513672,
+            "surprise": 0.0019067450193688273,
+            "neutral": 74.04149627685547
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 23.549348831176758,
+            "Man": 76.45065307617188
+          },
+          "region": {
+            "x": 248,
+            "y": 340,
+            "w": 341,
+            "h": 341,
+            "left_eye": [
+              482,
+              463
+            ],
+            "right_eye": [
+              396,
+              607
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00109.jpg"
+    },
+    {
+      "frame_name": "frame_00110.jpg",
+      "frame_number": 110,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "angry",
+          "emociones": {
+            "angry": 66.61320495605469,
+            "disgust": 5.748641490936279,
+            "fear": 3.3804728984832764,
+            "happy": 2.954735040664673,
+            "sad": 6.405964374542236,
+            "surprise": 1.7855472564697266,
+            "neutral": 13.111444473266602
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.19898761808872223,
+            "Man": 99.80101013183594
+          },
+          "region": {
+            "x": 266,
+            "y": 359,
+            "w": 314,
+            "h": 314,
+            "left_eye": [
+              488,
+              471
+            ],
+            "right_eye": [
+              367,
+              460
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00110.jpg"
+    },
+    {
+      "frame_name": "frame_00111.jpg",
+      "frame_number": 111,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.37325045466423035,
+            "disgust": 1.3165562450012658e-05,
+            "fear": 4.364663600921631,
+            "happy": 90.5010986328125,
+            "sad": 0.01807006075978279,
+            "surprise": 4.720015525817871,
+            "neutral": 0.022888118401169777
+          },
+          "edad": 30,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 6.410890102386475,
+            "Man": 93.589111328125
+          },
+          "region": {
+            "x": 280,
+            "y": 366,
+            "w": 314,
+            "h": 314,
+            "left_eye": [
+              495,
+              474
+            ],
+            "right_eye": [
+              426,
+              535
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00111.jpg"
+    },
+    {
+      "frame_name": "frame_00112.jpg",
+      "frame_number": 112,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.0459170788526535,
+            "disgust": 3.3619062378420494e-06,
+            "fear": 2.339451551437378,
+            "happy": 95.277099609375,
+            "sad": 0.02014753222465515,
+            "surprise": 2.309953212738037,
+            "neutral": 0.007429244462400675
+          },
+          "edad": 30,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 9.768768310546875,
+            "Man": 90.23123168945312
+          },
+          "region": {
+            "x": 248,
+            "y": 357,
+            "w": 321,
+            "h": 321,
+            "left_eye": [
+              466,
+              463
+            ],
+            "right_eye": [
+              408,
+              527
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00112.jpg"
+    },
+    {
+      "frame_name": "frame_00113.jpg",
+      "frame_number": 113,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.23748254776000977,
+            "disgust": 0.0003125997318420559,
+            "fear": 9.155047416687012,
+            "happy": 86.35672760009766,
+            "sad": 0.4346340596675873,
+            "surprise": 3.5756125450134277,
+            "neutral": 0.24019406735897064
+          },
+          "edad": 31,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 11.804852485656738,
+            "Man": 88.19514465332031
+          },
+          "region": {
+            "x": 203,
+            "y": 352,
+            "w": 314,
+            "h": 314,
+            "left_eye": [
+              418,
+              448
+            ],
+            "right_eye": [
+              357,
+              519
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00113.jpg"
+    },
+    {
+      "frame_name": "frame_00114.jpg",
+      "frame_number": 114,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.025990717113018036,
+            "disgust": 2.190034287252729e-08,
+            "fear": 1.5703532695770264,
+            "happy": 0.036620065569877625,
+            "sad": 0.16432765126228333,
+            "surprise": 0.014097686856985092,
+            "neutral": 98.18861389160156
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.05772498622536659,
+            "Man": 99.94227600097656
+          },
+          "region": {
+            "x": 157,
+            "y": 377,
+            "w": 345,
+            "h": 345,
+            "left_eye": [
+              395,
+              494
+            ],
+            "right_eye": [
+              256,
+              500
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00114.jpg"
+    },
+    {
+      "frame_name": "frame_00115.jpg",
+      "frame_number": 115,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 2.957191228866577,
+            "disgust": 0.001136451493948698,
+            "fear": 54.23542785644531,
+            "happy": 1.3959214687347412,
+            "sad": 15.269866943359375,
+            "surprise": 0.42036277055740356,
+            "neutral": 25.720088958740234
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.0945112407207489,
+            "Man": 99.90548706054688
+          },
+          "region": {
+            "x": 138,
+            "y": 361,
+            "w": 374,
+            "h": 374,
+            "left_eye": [
+              393,
+              482
+            ],
+            "right_eye": [
+              242,
+              489
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00115.jpg"
+    },
+    {
+      "frame_name": "frame_00116.jpg",
+      "frame_number": 116,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.008081653155386448,
+            "disgust": 8.661627362016588e-05,
+            "fear": 0.04835832491517067,
+            "happy": 0.17872841656208038,
+            "sad": 2.777853488922119,
+            "surprise": 0.0016887171659618616,
+            "neutral": 96.9852066040039
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 64.46660614013672,
+            "Man": 35.53338623046875
+          },
+          "region": {
+            "x": 151,
+            "y": 342,
+            "w": 346,
+            "h": 346,
+            "left_eye": [
+              318,
+              597
+            ],
+            "right_eye": [
+              243,
+              452
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00116.jpg"
+    },
+    {
+      "frame_name": "frame_00117.jpg",
+      "frame_number": 117,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 8.159492637105359e-09,
+            "disgust": 2.0265490267889e-14,
+            "fear": 0.0028800317086279392,
+            "happy": 99.99710845947266,
+            "sad": 1.7081309806599165e-06,
+            "surprise": 1.3898090456265777e-09,
+            "neutral": 1.4443019608734176e-05
+          },
+          "edad": 35,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 17.833328247070312,
+            "Man": 82.16667938232422
+          },
+          "region": {
+            "x": 161,
+            "y": 329,
+            "w": 337,
+            "h": 337,
+            "left_eye": [
+              387,
+              434
+            ],
+            "right_eye": [
+              322,
+              578
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00117.jpg"
+    },
+    {
+      "frame_name": "frame_00118.jpg",
+      "frame_number": 118,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.15233948826789856,
+            "disgust": 0.0005798013880848885,
+            "fear": 24.64824104309082,
+            "happy": 0.5470029711723328,
+            "sad": 15.228321075439453,
+            "surprise": 0.08389835059642792,
+            "neutral": 59.33961868286133
+          },
+          "edad": 27,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.7929730415344238,
+            "Man": 99.20702362060547
+          },
+          "region": {
+            "x": 200,
+            "y": 350,
+            "w": 344,
+            "h": 344,
+            "left_eye": null,
+            "right_eye": null
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00118.jpg"
+    },
+    {
+      "frame_name": "frame_00119.jpg",
+      "frame_number": 119,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.2184261530637741,
+            "disgust": 7.527897416537144e-09,
+            "fear": 15.258367538452148,
+            "happy": 0.0011125070741400123,
+            "sad": 5.061412811279297,
+            "surprise": 13.315166473388672,
+            "neutral": 66.14551544189453
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.05275028571486473,
+            "Man": 99.94725799560547
+          },
+          "region": {
+            "x": 171,
+            "y": 352,
+            "w": 381,
+            "h": 381,
+            "left_eye": [
+              429,
+              484
+            ],
+            "right_eye": [
+              282,
+              482
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00119.jpg"
+    },
+    {
+      "frame_name": "frame_00120.jpg",
+      "frame_number": 120,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 9.642589569091797,
+            "disgust": 0.016929974779486656,
+            "fear": 52.65475082397461,
+            "happy": 16.57416343688965,
+            "sad": 9.964154243469238,
+            "surprise": 0.193514883518219,
+            "neutral": 10.953899383544922
+          },
+          "edad": 33,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 82.8337173461914,
+            "Man": 17.166276931762695
+          },
+          "region": {
+            "x": 192,
+            "y": 336,
+            "w": 360,
+            "h": 360,
+            "left_eye": [
+              365,
+              621
+            ],
+            "right_eye": [
+              293,
+              457
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00120.jpg"
+    },
+    {
+      "frame_name": "frame_00121.jpg",
+      "frame_number": 121,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.009942244738340378,
+            "disgust": 8.530419393082411e-08,
+            "fear": 1.8098870515823364,
+            "happy": 54.50774383544922,
+            "sad": 0.1609906554222107,
+            "surprise": 0.0018334805499762297,
+            "neutral": 43.50960159301758
+          },
+          "edad": 38,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 19.565580368041992,
+            "Man": 80.4344253540039
+          },
+          "region": {
+            "x": 205,
+            "y": 332,
+            "w": 342,
+            "h": 342,
+            "left_eye": [
+              440,
+              450
+            ],
+            "right_eye": [
+              370,
+              594
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00121.jpg"
+    },
+    {
+      "frame_name": "frame_00122.jpg",
+      "frame_number": 122,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 17.59107208251953,
+            "disgust": 0.002631840296089649,
+            "fear": 0.31840988993644714,
+            "happy": 46.1519775390625,
+            "sad": 2.0180842876434326,
+            "surprise": 2.528532968426589e-05,
+            "neutral": 33.91780471801758
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 23.176830291748047,
+            "Man": 76.82317352294922
+          },
+          "region": {
+            "x": 226,
+            "y": 347,
+            "w": 339,
+            "h": 339,
+            "left_eye": [
+              458,
+              466
+            ],
+            "right_eye": [
+              391,
+              625
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00122.jpg"
+    },
+    {
+      "frame_name": "frame_00123.jpg",
+      "frame_number": 123,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.00019128626445308328,
+            "disgust": 1.6172929463209584e-05,
+            "fear": 0.023372847586870193,
+            "happy": 1.933993935585022,
+            "sad": 32.97859191894531,
+            "surprise": 1.4735254808329046e-05,
+            "neutral": 65.0638198852539
+          },
+          "edad": 39,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 60.358341217041016,
+            "Man": 39.64166259765625
+          },
+          "region": {
+            "x": 208,
+            "y": 363,
+            "w": 371,
+            "h": 371,
+            "left_eye": [
+              387,
+              662
+            ],
+            "right_eye": [
+              326,
+              490
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00123.jpg"
+    },
+    {
+      "frame_name": "frame_00124.jpg",
+      "frame_number": 124,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.03179502859711647,
+            "disgust": 4.2695873503362236e-07,
+            "fear": 0.0005335522582754493,
+            "happy": 0.006869379431009293,
+            "sad": 0.26519775390625,
+            "surprise": 2.6354315195931122e-05,
+            "neutral": 99.69557189941406
+          },
+          "edad": 31,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 23.669702529907227,
+            "Man": 76.3302993774414
+          },
+          "region": {
+            "x": 215,
+            "y": 356,
+            "w": 379,
+            "h": 379,
+            "left_eye": [
+              470,
+              497
+            ],
+            "right_eye": [
+              389,
+              666
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00124.jpg"
+    },
+    {
+      "frame_name": "frame_00125.jpg",
+      "frame_number": 125,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "surprise",
+          "emociones": {
+            "angry": 3.5214338302612305,
+            "disgust": 0.013084699399769306,
+            "fear": 24.23927116394043,
+            "happy": 0.8872407674789429,
+            "sad": 1.3212987184524536,
+            "surprise": 67.17362976074219,
+            "neutral": 2.8440353870391846
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.20157480239868164,
+            "Man": 99.79843139648438
+          },
+          "region": {
+            "x": 225,
+            "y": 353,
+            "w": 353,
+            "h": 353,
+            "left_eye": [
+              471,
+              478
+            ],
+            "right_eye": [
+              335,
+              468
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00125.jpg"
+    },
+    {
+      "frame_name": "frame_00126.jpg",
+      "frame_number": 126,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 8.261838229373097e-05,
+            "disgust": 1.586439855351396e-14,
+            "fear": 0.0012134200660511851,
+            "happy": 0.0002942644350696355,
+            "sad": 0.0290939062833786,
+            "surprise": 2.384999220339523e-08,
+            "neutral": 99.96931457519531
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 32.540592193603516,
+            "Man": 67.45940399169922
+          },
+          "region": {
+            "x": 207,
+            "y": 333,
+            "w": 351,
+            "h": 351,
+            "left_eye": [
+              369,
+              537
+            ],
+            "right_eye": [
+              359,
+              620
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00126.jpg"
+    },
+    {
+      "frame_name": "frame_00127.jpg",
+      "frame_number": 127,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "sad",
+          "emociones": {
+            "angry": 0.0001965357078006491,
+            "disgust": 2.9782357913177293e-08,
+            "fear": 7.07849645614624,
+            "happy": 2.0588977336883545,
+            "sad": 89.22720336914062,
+            "surprise": 2.648363306434476e-07,
+            "neutral": 1.63521409034729
+          },
+          "edad": 37,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 28.69332504272461,
+            "Man": 71.30667877197266
+          },
+          "region": {
+            "x": 225,
+            "y": 346,
+            "w": 346,
+            "h": 346,
+            "left_eye": [
+              393,
+              541
+            ],
+            "right_eye": [
+              381,
+              614
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00127.jpg"
+    },
+    {
+      "frame_name": "frame_00128.jpg",
+      "frame_number": 128,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.023911630734801292,
+            "disgust": 3.6556118132580195e-09,
+            "fear": 0.3636056184768677,
+            "happy": 0.022306079044938087,
+            "sad": 0.3716958463191986,
+            "surprise": 0.0004203109710942954,
+            "neutral": 99.21805572509766
+          },
+          "edad": 30,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.23470672965049744,
+            "Man": 99.76529693603516
+          },
+          "region": {
+            "x": 228,
+            "y": 362,
+            "w": 343,
+            "h": 343,
+            "left_eye": [
+              463,
+              487
+            ],
+            "right_eye": [
+              333,
+              475
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00128.jpg"
+    },
+    {
+      "frame_name": "frame_00129.jpg",
+      "frame_number": 129,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0001692069781711325,
+            "disgust": 1.1632377910898436e-17,
+            "fear": 0.02677037939429283,
+            "happy": 2.715177345180564e-07,
+            "sad": 3.3050262928009033,
+            "surprise": 8.207351129385643e-06,
+            "neutral": 96.66802978515625
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.11137381941080093,
+            "Man": 99.88862609863281
+          },
+          "region": {
+            "x": 249,
+            "y": 393,
+            "w": 346,
+            "h": 346,
+            "left_eye": [
+              484,
+              518
+            ],
+            "right_eye": [
+              351,
+              506
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00129.jpg"
+    },
+    {
+      "frame_name": "frame_00130.jpg",
+      "frame_number": 130,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.00011900637036887929,
+            "disgust": 2.8787786732209497e-07,
+            "fear": 0.009393587708473206,
+            "happy": 0.012432524934411049,
+            "sad": 0.5681783556938171,
+            "surprise": 2.6246223569614813e-05,
+            "neutral": 99.40985107421875
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 25.82195472717285,
+            "Man": 74.17805480957031
+          },
+          "region": {
+            "x": 236,
+            "y": 371,
+            "w": 357,
+            "h": 357,
+            "left_eye": [
+              477,
+              498
+            ],
+            "right_eye": [
+              402,
+              657
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00130.jpg"
+    },
+    {
+      "frame_name": "frame_00131.jpg",
+      "frame_number": 131,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 8.570765203330666e-05,
+            "disgust": 1.1566444690913613e-08,
+            "fear": 0.0003530812682583928,
+            "happy": 0.40589118003845215,
+            "sad": 0.4666784703731537,
+            "surprise": 3.332356209284626e-05,
+            "neutral": 99.12696075439453
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 20.366270065307617,
+            "Man": 79.63372802734375
+          },
+          "region": {
+            "x": 225,
+            "y": 352,
+            "w": 361,
+            "h": 361,
+            "left_eye": [
+              470,
+              484
+            ],
+            "right_eye": [
+              396,
+              630
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00131.jpg"
+    },
+    {
+      "frame_name": "frame_00132.jpg",
+      "frame_number": 132,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.13021066784858704,
+            "disgust": 0.0002298905747011304,
+            "fear": 0.034503430128097534,
+            "happy": 97.21304321289062,
+            "sad": 1.382258415222168,
+            "surprise": 0.0021276017650961876,
+            "neutral": 1.237619400024414
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 75.36830139160156,
+            "Man": 24.631694793701172
+          },
+          "region": {
+            "x": 221,
+            "y": 360,
+            "w": 355,
+            "h": 355,
+            "left_eye": [
+              389,
+              643
+            ],
+            "right_eye": [
+              329,
+              479
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00132.jpg"
+    },
+    {
+      "frame_name": "frame_00133.jpg",
+      "frame_number": 133,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.020556213334202766,
+            "disgust": 6.866392787685527e-09,
+            "fear": 0.7210775017738342,
+            "happy": 0.003143823007121682,
+            "sad": 0.18380524218082428,
+            "surprise": 0.002311183139681816,
+            "neutral": 99.06910705566406
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.11640031635761261,
+            "Man": 99.88359832763672
+          },
+          "region": {
+            "x": 224,
+            "y": 361,
+            "w": 360,
+            "h": 360,
+            "left_eye": [
+              467,
+              495
+            ],
+            "right_eye": [
+              333,
+              484
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00133.jpg"
+    },
+    {
+      "frame_name": "frame_00134.jpg",
+      "frame_number": 134,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.41114166378974915,
+            "disgust": 0.014381015673279762,
+            "fear": 0.12357208132743835,
+            "happy": 30.242712020874023,
+            "sad": 14.227241516113281,
+            "surprise": 0.08384650200605392,
+            "neutral": 54.8971061706543
+          },
+          "edad": 36,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 47.77059555053711,
+            "Man": 52.22939682006836
+          },
+          "region": {
+            "x": 218,
+            "y": 357,
+            "w": 361,
+            "h": 361,
+            "left_eye": [
+              388,
+              648
+            ],
+            "right_eye": [
+              328,
+              477
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00134.jpg"
+    },
+    {
+      "frame_name": "frame_00135.jpg",
+      "frame_number": 135,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0254428219050169,
+            "disgust": 9.103427733858638e-11,
+            "fear": 5.309307098388672,
+            "happy": 0.00019434360729064792,
+            "sad": 3.845641851425171,
+            "surprise": 0.108869768679142,
+            "neutral": 90.71054077148438
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.23254777491092682,
+            "Man": 99.7674560546875
+          },
+          "region": {
+            "x": 218,
+            "y": 351,
+            "w": 359,
+            "h": 359,
+            "left_eye": [
+              464,
+              482
+            ],
+            "right_eye": [
+              330,
+              473
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00135.jpg"
+    },
+    {
+      "frame_name": "frame_00136.jpg",
+      "frame_number": 136,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.009814257733523846,
+            "disgust": 6.984003653176529e-11,
+            "fear": 0.2285613864660263,
+            "happy": 0.000733946799300611,
+            "sad": 0.16802124679088593,
+            "surprise": 0.00035424326779320836,
+            "neutral": 99.59251403808594
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.19850072264671326,
+            "Man": 99.8014907836914
+          },
+          "region": {
+            "x": 213,
+            "y": 350,
+            "w": 367,
+            "h": 367,
+            "left_eye": [
+              463,
+              483
+            ],
+            "right_eye": [
+              324,
+              475
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00136.jpg"
+    },
+    {
+      "frame_name": "frame_00137.jpg",
+      "frame_number": 137,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.7815749049186707,
+            "disgust": 5.854476694366895e-05,
+            "fear": 3.9579501152038574,
+            "happy": 0.06786990910768509,
+            "sad": 0.987001359462738,
+            "surprise": 0.06864138692617416,
+            "neutral": 94.13690948486328
+          },
+          "edad": 25,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.19157497584819794,
+            "Man": 99.80843353271484
+          },
+          "region": {
+            "x": 205,
+            "y": 347,
+            "w": 385,
+            "h": 385,
+            "left_eye": [
+              470,
+              480
+            ],
+            "right_eye": [
+              321,
+              474
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00137.jpg"
+    },
+    {
+      "frame_name": "frame_00138.jpg",
+      "frame_number": 138,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "angry",
+          "emociones": {
+            "angry": 62.18849182128906,
+            "disgust": 7.570508003234863,
+            "fear": 26.67207908630371,
+            "happy": 0.01499805599451065,
+            "sad": 2.643336296081543,
+            "surprise": 0.3035539984703064,
+            "neutral": 0.6070393919944763
+          },
+          "edad": 31,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.7981905937194824,
+            "Man": 99.2018051147461
+          },
+          "region": {
+            "x": 202,
+            "y": 338,
+            "w": 387,
+            "h": 387,
+            "left_eye": null,
+            "right_eye": null
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00138.jpg"
+    },
+    {
+      "frame_name": "frame_00139.jpg",
+      "frame_number": 139,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 38.53446960449219,
+            "disgust": 1.9017606973648071,
+            "fear": 41.66183090209961,
+            "happy": 1.8035802841186523,
+            "sad": 0.6883140206336975,
+            "surprise": 14.23011589050293,
+            "neutral": 1.179926872253418
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.14765259623527527,
+            "Man": 99.85235595703125
+          },
+          "region": {
+            "x": 202,
+            "y": 346,
+            "w": 373,
+            "h": 373,
+            "left_eye": [
+              461,
+              473
+            ],
+            "right_eye": [
+              312,
+              465
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00139.jpg"
+    },
+    {
+      "frame_name": "frame_00140.jpg",
+      "frame_number": 140,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.00206924881786108,
+            "disgust": 7.529869350264562e-08,
+            "fear": 0.004286409821361303,
+            "happy": 7.357212066650391,
+            "sad": 1.341239094734192,
+            "surprise": 0.0005236532888375223,
+            "neutral": 91.29467010498047
+          },
+          "edad": 34,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 17.75287437438965,
+            "Man": 82.24712371826172
+          },
+          "region": {
+            "x": 205,
+            "y": 347,
+            "w": 379,
+            "h": 379,
+            "left_eye": [
+              468,
+              491
+            ],
+            "right_eye": [
+              387,
+              679
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00140.jpg"
+    },
+    {
+      "frame_name": "frame_00141.jpg",
+      "frame_number": 141,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 5.973224233457586e-06,
+            "disgust": 7.564791459913067e-09,
+            "fear": 0.0008508176542818546,
+            "happy": 0.2040582299232483,
+            "sad": 0.20726248621940613,
+            "surprise": 0.0002570098440628499,
+            "neutral": 99.58756256103516
+          },
+          "edad": 31,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 28.996124267578125,
+            "Man": 71.00387573242188
+          },
+          "region": {
+            "x": 202,
+            "y": 355,
+            "w": 387,
+            "h": 387,
+            "left_eye": [
+              470,
+              495
+            ],
+            "right_eye": [
+              387,
+              671
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00141.jpg"
+    },
+    {
+      "frame_name": "frame_00142.jpg",
+      "frame_number": 142,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0001050447826855816,
+            "disgust": 1.2779323697031941e-06,
+            "fear": 0.17355822026729584,
+            "happy": 37.17877960205078,
+            "sad": 0.656495988368988,
+            "surprise": 0.2087748795747757,
+            "neutral": 61.78228759765625
+          },
+          "edad": 31,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 28.219907760620117,
+            "Man": 71.78008270263672
+          },
+          "region": {
+            "x": 220,
+            "y": 366,
+            "w": 364,
+            "h": 364,
+            "left_eye": [
+              472,
+              493
+            ],
+            "right_eye": [
+              386,
+              648
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00142.jpg"
+    },
+    {
+      "frame_name": "frame_00143.jpg",
+      "frame_number": 143,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 2.1103005565237254e-05,
+            "disgust": 1.2746829980425645e-10,
+            "fear": 0.0001611891493666917,
+            "happy": 0.004628985654562712,
+            "sad": 0.05780545622110367,
+            "surprise": 4.7005114538478665e-06,
+            "neutral": 99.9373779296875
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 27.874460220336914,
+            "Man": 72.12554168701172
+          },
+          "region": {
+            "x": 223,
+            "y": 361,
+            "w": 375,
+            "h": 375,
+            "left_eye": [
+              476,
+              497
+            ],
+            "right_eye": [
+              401,
+              662
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00143.jpg"
+    },
+    {
+      "frame_name": "frame_00144.jpg",
+      "frame_number": 144,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0075991773046553135,
+            "disgust": 1.1713141567781804e-10,
+            "fear": 0.28656283020973206,
+            "happy": 0.001658740802668035,
+            "sad": 0.6614572405815125,
+            "surprise": 7.112817002052907e-06,
+            "neutral": 99.04271697998047
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.34050434827804565,
+            "Man": 99.65950012207031
+          },
+          "region": {
+            "x": 217,
+            "y": 364,
+            "w": 358,
+            "h": 358,
+            "left_eye": [
+              462,
+              489
+            ],
+            "right_eye": [
+              327,
+              484
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00144.jpg"
+    },
+    {
+      "frame_name": "frame_00145.jpg",
+      "frame_number": 145,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 1.0510798692703247,
+            "disgust": 0.054643698036670685,
+            "fear": 8.252050399780273,
+            "happy": 54.68976593017578,
+            "sad": 25.108417510986328,
+            "surprise": 0.005883412901312113,
+            "neutral": 10.83815860748291
+          },
+          "edad": 34,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 76.72525787353516,
+            "Man": 23.274738311767578
+          },
+          "region": {
+            "x": 225,
+            "y": 370,
+            "w": 348,
+            "h": 348,
+            "left_eye": [
+              394,
+              636
+            ],
+            "right_eye": [
+              331,
+              484
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00145.jpg"
+    },
+    {
+      "frame_name": "frame_00146.jpg",
+      "frame_number": 146,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0030359174124896526,
+            "disgust": 2.2336871552397497e-05,
+            "fear": 1.9889583587646484,
+            "happy": 12.684575080871582,
+            "sad": 0.5434461832046509,
+            "surprise": 0.014057890512049198,
+            "neutral": 84.76590728759766
+          },
+          "edad": 31,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 25.243736267089844,
+            "Man": 74.75627136230469
+          },
+          "region": {
+            "x": 229,
+            "y": 374,
+            "w": 343,
+            "h": 343,
+            "left_eye": [
+              462,
+              493
+            ],
+            "right_eye": [
+              390,
+              638
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00146.jpg"
+    },
+    {
+      "frame_name": "frame_00147.jpg",
+      "frame_number": 147,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "sad",
+          "emociones": {
+            "angry": 2.711421012878418,
+            "disgust": 1.334640622138977,
+            "fear": 5.367844581604004,
+            "happy": 14.266989707946777,
+            "sad": 71.92112731933594,
+            "surprise": 0.013409176841378212,
+            "neutral": 4.3845672607421875
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 88.809814453125,
+            "Man": 11.190178871154785
+          },
+          "region": {
+            "x": 222,
+            "y": 370,
+            "w": 348,
+            "h": 348,
+            "left_eye": [
+              397,
+              643
+            ],
+            "right_eye": [
+              333,
+              488
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00147.jpg"
+    },
+    {
+      "frame_name": "frame_00148.jpg",
+      "frame_number": 148,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "sad",
+          "emociones": {
+            "angry": 0.05676707625389099,
+            "disgust": 0.03626884147524834,
+            "fear": 0.6402053833007812,
+            "happy": 20.304492950439453,
+            "sad": 47.22677230834961,
+            "surprise": 0.01655655726790428,
+            "neutral": 31.71893310546875
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 91.35514831542969,
+            "Man": 8.644845962524414
+          },
+          "region": {
+            "x": 217,
+            "y": 360,
+            "w": 361,
+            "h": 361,
+            "left_eye": [
+              389,
+              636
+            ],
+            "right_eye": [
+              329,
+              486
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00148.jpg"
+    },
+    {
+      "frame_name": "frame_00149.jpg",
+      "frame_number": 149,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.0383300855755806,
+            "disgust": 0.10760194808244705,
+            "fear": 0.05288945883512497,
+            "happy": 96.19559478759766,
+            "sad": 3.2843525409698486,
+            "surprise": 0.0001088481440092437,
+            "neutral": 0.32112136483192444
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 91.82430267333984,
+            "Man": 8.175702095031738
+          },
+          "region": {
+            "x": 211,
+            "y": 356,
+            "w": 370,
+            "h": 370,
+            "left_eye": [
+              384,
+              642
+            ],
+            "right_eye": [
+              326,
+              487
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00149.jpg"
+    },
+    {
+      "frame_name": "frame_00150.jpg",
+      "frame_number": 150,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "happy",
+          "emociones": {
+            "angry": 0.2248644381761551,
+            "disgust": 0.17906303703784943,
+            "fear": 0.38408827781677246,
+            "happy": 49.244388580322266,
+            "sad": 43.508853912353516,
+            "surprise": 0.0021270932629704475,
+            "neutral": 6.45662260055542
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 88.52474212646484,
+            "Man": 11.475262641906738
+          },
+          "region": {
+            "x": 211,
+            "y": 363,
+            "w": 366,
+            "h": 366,
+            "left_eye": [
+              384,
+              644
+            ],
+            "right_eye": [
+              324,
+              488
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00150.jpg"
+    },
+    {
+      "frame_name": "frame_00151.jpg",
+      "frame_number": 151,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 0.0001709655625745654,
+            "disgust": 2.8162124325256666e-13,
+            "fear": 51.09156799316406,
+            "happy": 1.5201851510937558e-07,
+            "sad": 43.841190338134766,
+            "surprise": 4.818626830882522e-09,
+            "neutral": 5.067067623138428
+          },
+          "edad": 29,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 17.603403091430664,
+            "Man": 82.39659881591797
+          },
+          "region": {
+            "x": 0,
+            "y": 0,
+            "w": 719,
+            "h": 1279,
+            "left_eye": null,
+            "right_eye": null
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00151.jpg"
+    },
+    {
+      "frame_name": "frame_00152.jpg",
+      "frame_number": 152,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 3.2664833068847656,
+            "disgust": 9.157984095509164e-07,
+            "fear": 0.3436591923236847,
+            "happy": 21.699405670166016,
+            "sad": 0.15220415592193604,
+            "surprise": 0.0017886939458549023,
+            "neutral": 74.53645324707031
+          },
+          "edad": 35,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 29.1747989654541,
+            "Man": 70.82520294189453
+          },
+          "region": {
+            "x": 182,
+            "y": 348,
+            "w": 373,
+            "h": 373,
+            "left_eye": [
+              432,
+              481
+            ],
+            "right_eye": [
+              362,
+              654
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00152.jpg"
+    },
+    {
+      "frame_name": "frame_00153.jpg",
+      "frame_number": 153,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 2.6306676864624023,
+            "disgust": 0.0004398155433591455,
+            "fear": 4.32756233215332,
+            "happy": 0.4834650158882141,
+            "sad": 5.112372398376465,
+            "surprise": 0.06273207068443298,
+            "neutral": 87.38276672363281
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.24423247575759888,
+            "Man": 99.75576782226562
+          },
+          "region": {
+            "x": 173,
+            "y": 357,
+            "w": 377,
+            "h": 377,
+            "left_eye": [
+              432,
+              491
+            ],
+            "right_eye": [
+              284,
+              485
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00153.jpg"
+    },
+    {
+      "frame_name": "frame_00154.jpg",
+      "frame_number": 154,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 0.445175439119339,
+            "disgust": 0.0001595998037373647,
+            "fear": 75.08991241455078,
+            "happy": 0.4410601258277893,
+            "sad": 0.15247084200382233,
+            "surprise": 8.788067817687988,
+            "neutral": 15.083151817321777
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.2740476429462433,
+            "Man": 99.7259521484375
+          },
+          "region": {
+            "x": 196,
+            "y": 354,
+            "w": 378,
+            "h": 378,
+            "left_eye": [
+              461,
+              485
+            ],
+            "right_eye": [
+              309,
+              475
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00154.jpg"
+    },
+    {
+      "frame_name": "frame_00155.jpg",
+      "frame_number": 155,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.00022620045638177544,
+            "disgust": 1.5825631862753653e-06,
+            "fear": 0.014659062027931213,
+            "happy": 2.0942530632019043,
+            "sad": 1.7070019245147705,
+            "surprise": 0.8795323967933655,
+            "neutral": 95.30432891845703
+          },
+          "edad": 33,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 20.221168518066406,
+            "Man": 79.7788314819336
+          },
+          "region": {
+            "x": 208,
+            "y": 337,
+            "w": 378,
+            "h": 378,
+            "left_eye": [
+              505,
+              425
+            ],
+            "right_eye": [
+              386,
+              644
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00155.jpg"
+    },
+    {
+      "frame_name": "frame_00156.jpg",
+      "frame_number": 156,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.027678506448864937,
+            "disgust": 0.0019236051011830568,
+            "fear": 0.08518989384174347,
+            "happy": 0.8778609037399292,
+            "sad": 3.8758842945098877,
+            "surprise": 0.0017302315682172775,
+            "neutral": 95.1297378540039
+          },
+          "edad": 32,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 62.3089599609375,
+            "Man": 37.691043853759766
+          },
+          "region": {
+            "x": 234,
+            "y": 345,
+            "w": 358,
+            "h": 358,
+            "left_eye": [
+              394,
+              632
+            ],
+            "right_eye": [
+              347,
+              464
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00156.jpg"
+    },
+    {
+      "frame_name": "frame_00157.jpg",
+      "frame_number": 157,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.00013345461047720164,
+            "disgust": 3.794740166540578e-08,
+            "fear": 0.08155594766139984,
+            "happy": 0.3360891342163086,
+            "sad": 0.07890724390745163,
+            "surprise": 0.0030233217403292656,
+            "neutral": 99.50029754638672
+          },
+          "edad": 31,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 14.050127983093262,
+            "Man": 85.94987487792969
+          },
+          "region": {
+            "x": 224,
+            "y": 353,
+            "w": 363,
+            "h": 363,
+            "left_eye": [
+              474,
+              480
+            ],
+            "right_eye": [
+              394,
+              664
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00157.jpg"
+    },
+    {
+      "frame_name": "frame_00158.jpg",
+      "frame_number": 158,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "fear",
+          "emociones": {
+            "angry": 4.412837028503418,
+            "disgust": 0.16947482526302338,
+            "fear": 53.99782943725586,
+            "happy": 1.9255132675170898,
+            "sad": 0.40593379735946655,
+            "surprise": 35.01846694946289,
+            "neutral": 4.069951057434082
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.14971180260181427,
+            "Man": 99.85028839111328
+          },
+          "region": {
+            "x": 200,
+            "y": 348,
+            "w": 386,
+            "h": 386,
+            "left_eye": [
+              471,
+              486
+            ],
+            "right_eye": [
+              323,
+              471
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00158.jpg"
+    },
+    {
+      "frame_name": "frame_00159.jpg",
+      "frame_number": 159,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.0052592139691114426,
+            "disgust": 0.00010463055514264852,
+            "fear": 1.412354588508606,
+            "happy": 3.868030071258545,
+            "sad": 4.038933753967285,
+            "surprise": 0.008878483437001705,
+            "neutral": 90.66644287109375
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 13.981810569763184,
+            "Man": 86.01819610595703
+          },
+          "region": {
+            "x": 189,
+            "y": 348,
+            "w": 379,
+            "h": 379,
+            "left_eye": [
+              450,
+              479
+            ],
+            "right_eye": [
+              366,
+              646
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00159.jpg"
+    },
+    {
+      "frame_name": "frame_00160.jpg",
+      "frame_number": 160,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "angry",
+          "emociones": {
+            "angry": 44.315059661865234,
+            "disgust": 0.054681312292814255,
+            "fear": 16.777996063232422,
+            "happy": 7.582849979400635,
+            "sad": 0.6916638612747192,
+            "surprise": 8.227222442626953,
+            "neutral": 22.350522994995117
+          },
+          "edad": 26,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.5107976198196411,
+            "Man": 99.48919677734375
+          },
+          "region": {
+            "x": 179,
+            "y": 339,
+            "w": 393,
+            "h": 393,
+            "left_eye": [
+              446,
+              479
+            ],
+            "right_eye": [
+              298,
+              466
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00160.jpg"
+    },
+    {
+      "frame_name": "frame_00161.jpg",
+      "frame_number": 161,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "sad",
+          "emociones": {
+            "angry": 0.0029861563816666603,
+            "disgust": 7.989829100552015e-07,
+            "fear": 0.07726963609457016,
+            "happy": 0.005739243235439062,
+            "sad": 86.08423614501953,
+            "surprise": 5.8360392358736135e-06,
+            "neutral": 13.829761505126953
+          },
+          "edad": 31,
+          "genero": "Woman",
+          "confianza_genero": {
+            "Woman": 76.52973937988281,
+            "Man": 23.470258712768555
+          },
+          "region": {
+            "x": 191,
+            "y": 355,
+            "w": 390,
+            "h": 390,
+            "left_eye": [
+              372,
+              667
+            ],
+            "right_eye": [
+              307,
+              478
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00161.jpg"
+    },
+    {
+      "frame_name": "frame_00162.jpg",
+      "frame_number": 162,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "surprise",
+          "emociones": {
+            "angry": 2.60034703387646e-05,
+            "disgust": 1.1018392448436387e-10,
+            "fear": 0.03861125931143761,
+            "happy": 3.1138097256189212e-06,
+            "sad": 6.0233134718146175e-05,
+            "surprise": 99.96129608154297,
+            "neutral": 3.978599579568254e-06
+          },
+          "edad": 28,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 0.1846354454755783,
+            "Man": 99.81536102294922
+          },
+          "region": {
+            "x": 183,
+            "y": 345,
+            "w": 392,
+            "h": 392,
+            "left_eye": [
+              455,
+              484
+            ],
+            "right_eye": [
+              304,
+              476
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00162.jpg"
+    },
+    {
+      "frame_name": "frame_00163.jpg",
+      "frame_number": 163,
+      "num_rostros": 1,
+      "rostros": [
+        {
+          "rostro_id": 0,
+          "emocion_dominante": "neutral",
+          "emociones": {
+            "angry": 0.006978172343224287,
+            "disgust": 2.113746511156478e-08,
+            "fear": 0.05704555660486221,
+            "happy": 1.4495759010314941,
+            "sad": 0.20302894711494446,
+            "surprise": 0.00010255106462864205,
+            "neutral": 98.28327178955078
+          },
+          "edad": 32,
+          "genero": "Man",
+          "confianza_genero": {
+            "Woman": 23.43799591064453,
+            "Man": 76.56200408935547
+          },
+          "region": {
+            "x": 185,
+            "y": 350,
+            "w": 391,
+            "h": 391,
+            "left_eye": [
+              450,
+              488
+            ],
+            "right_eye": [
+              374,
+              678
+            ]
+          }
+        }
+      ],
+      "error": null,
+      "frame_path": "resultados_emociones\\frames\\frame_00163.jpg"
+    }
+  ],
+  "estadisticas": {
+    "total_errores": 0,
+    "errores": []
+  },
+  "directorios": {
+    "frames": "resultados_emociones\\frames",
+    "reportes": "resultados_emociones\\reports"
+  }
+}

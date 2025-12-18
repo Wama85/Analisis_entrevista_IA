@@ -442,6 +442,46 @@ class AnalizadorEmociones:
         else:
             logging.info(f"\n✓ No se encontraron errores")
 
+# ==========================================================
+# MODO EN VIVO (STREAMING)
+# ==========================================================
+
+_DEEPFACE_READY = False
+
+
+def predict_emotion_from_frame(frame: np.ndarray) -> str | None:
+    """
+    Analiza un SOLO frame en memoria (para uso en vivo).
+    """
+    global _DEEPFACE_READY
+
+    try:
+        # Warm-up SOLO una vez
+        if not _DEEPFACE_READY:
+            DeepFace.analyze(
+                img_path=frame,
+                actions=["emotion"],
+                enforce_detection=False,
+                silent=True
+            )
+            _DEEPFACE_READY = True
+
+        result = DeepFace.analyze(
+            img_path=frame,
+            actions=["emotion"],
+            enforce_detection=False,
+            silent=True
+        )
+
+        if isinstance(result, list):
+            result = result[0]
+
+        return result.get("dominant_emotion")
+
+    except Exception as e:
+        logging.warning(f"Error en análisis en vivo: {e}")
+        return None
+
 
 def main():
     """

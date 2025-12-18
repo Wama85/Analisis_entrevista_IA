@@ -4,6 +4,7 @@ import logging
 import sys
 import argparse
 import os
+from plots.plot_sync import plot_synchronized_emotions
 
 logging.basicConfig(
     level=logging.INFO,
@@ -84,7 +85,19 @@ def main(video_path: str):
 
     sync_json = Path("outputs/sync/synchronized_emotions.json")
 
-    # ===============================
+    # Reporte de insights
+    run_command(
+        [
+            "python", "reports/generate_insights.py",
+            "--sync_json", str(sync_json),
+            "--out", f"outputs/reports/{video_name}_insights.json"
+        ],
+        "Generacion de reporte de insights"
+    )
+
+
+
+# ===============================
     # 4) Video final anotado
     # ===============================
     run_command(

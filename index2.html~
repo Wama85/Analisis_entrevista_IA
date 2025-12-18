@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+
+<video id="video" autoplay></video>
+<p id="out"></p>
+
+<script>
+    const ws = new WebSocket("ws://localhost:8000/live");
+    const video = document.getElementById("video");
+    const out = document.getElementById("out");
+
+    let lastAudioChunk = null;
+
+    // ----------- CAMARA + MICRO -----------
+    navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+    .then(stream => {
+      video.srcObject = stream;
+
+      // VIDEO
+      const canvas = document.createElement("canvas");
+      const ctx = canvas.getContext("2d");
+
+      // AUDIO
+      const recorder = new MediaRecorder(stream);
+      recorder.ondataavailable = e => lastAudioChunk = e.data;
+      recorder.start(3000); // cada 3 segundos
+
+      setInterval(() => {
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        ctx.drawImage(video, 0, 0);
+
+        canvas.toBlob(blob => {
+          const fr = new FileReader();
+          fr.onloadend = () => {
+            const frameB64 = fr.result.split(",")[1];
+
+            if (lastAudioChunk) {
+              const ar = new FileReader();
+              ar.onloadend = () => {
+                ws.send(JSON.stringify({
+                  frame: frameB64,
+                  audio: ar.result.split(",")[1]
+                }));
+                lastAudioChunk = null;
+              };
+              ar.readAsDataURL(lastAudioChunk);
+            } else {
+              ws.send(JSON.stringify({ frame: frameB64 }));
+            }
+          };
+          fr.readAsDataURL(blob);
+        }, "image/jpeg");
+      }, 300);
+    });
+
+    // ----------- RESPUESTA -----------
+    ws.onmessage = e => {
+      const d = JSON.parse(e.data);
+      out.innerText =
+        `Facial: ${d.facial_emotion}\nTexto: ${d.text_emotion}\n${d.text || ""}`;
+    };
+</script>
+
+</body>
+</html>

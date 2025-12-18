@@ -4,6 +4,7 @@ import logging
 import sys
 import argparse
 import os
+from plots.plot_sync import plot_synchronized_emotions
 
 logging.basicConfig(
     level=logging.INFO,
@@ -84,7 +85,11 @@ def main(video_path: str):
 
     sync_json = Path("outputs/sync/synchronized_emotions.json")
 
-    # ===============================
+
+
+
+
+# ===============================
     # 4) Video final anotado
     # ===============================
     run_command(
@@ -102,7 +107,14 @@ def main(video_path: str):
 
     logger.info("PIPELINE COMPLETO FINALIZADO")
     logger.info(f"Video final generado en: outputs/sync/{video_name}_final.mp4")
+    # Abrir el video final automáticamente (Windows)
+    final_video = Path(f"outputs/sync/{video_name}_final.mp4")
 
+    if final_video.exists():
+        logger.info("Abriendo video final...")
+        os.startfile(final_video)
+    else:
+        logger.warning("No se encontró el video final para abrirlo.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(

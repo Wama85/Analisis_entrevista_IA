@@ -1,8 +1,10 @@
 .idea/
 outputs/
+outputs/*
 */__pycache__/
 output_frames_dia1/
 resultados_emociones/
+resultados_emociones/*
 
 # Entornos virtuales
 .env

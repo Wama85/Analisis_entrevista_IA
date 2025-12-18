@@ -3,7 +3,9 @@ from __future__ import annotations
 import subprocess
 from pathlib import Path
 from typing import Optional
+import logging
 
+logger = logging.getLogger(__name__)
 
 def _ffmpeg_available() -> bool:
     try:
@@ -22,7 +24,10 @@ def extract_audio(video_path: str, out_wav_path: str, sr: int = 16000) -> str:
     """
     v = Path(video_path)
     out = Path(out_wav_path)
-    out.parent.mkdir(parents=True, exist_ok=True)
+
+    if out.exists():
+        logger.info(f"El audio ya existe en {out}. Omitiendo extracción.")
+        return str(out)
 
     if not v.exists():
         raise FileNotFoundError(f"Video not found: {v}")

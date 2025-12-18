@@ -3,6 +3,7 @@ from __future__ import annotations
 from typing import Any, Dict, Optional
 import logging
 import whisper  # openai-whisper
+import torch
 
 
 # ===============================
@@ -36,14 +37,17 @@ def transcribe_audio(
     logger.debug(f"Modelo Whisper: {model_size}")
     logger.debug(f"Idioma configurado: {language}")
 
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    logger.info(f"Usando dispositivo: {device}")
+
     # === CÓDIGO ORIGINAL (NO SE TOCA) ===
-    model = whisper.load_model(model_size)
+    model = whisper.load_model(model_size, device=device)
 
     # fp16 False helps on CPU / some GPUs
     result = model.transcribe(
         wav_path,
         language=language,
-        fp16=False,
+        fp16=(device == "cuda"),
         verbose=False,
     )
 

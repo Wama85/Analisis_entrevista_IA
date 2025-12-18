@@ -9,6 +9,7 @@ from collections import defaultdict
 
 import matplotlib.pyplot as plt
 
+# Importaciones de tus módulos
 from audio_text.extract_audio import extract_audio
 from audio_text.transcribe_whisper import transcribe_audio
 from audio_text.text_emotion import build_emotion_classifier, predict_text_emotions
@@ -65,22 +66,21 @@ def run(
 
     outp = Path(out_dir)
     outp.mkdir(parents=True, exist_ok=True)
-    # cada uno tiene su propio JSON
+
     video_name = Path(video_path).stem
     run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
     wav_path = str(outp / f"{video_name}_{run_id}.wav")
 
     # JSON distinto por cada video
-    video_name = Path(video_path).stem
     json_path = str(outp / f"{video_name}_text_audio.json")
 
-    # 1) Extract audio
+    # 1) Extract audio (Usa la lógica de extract_audio.py con fallback)
     logger.info("Aquí se esta extrayendo el audio desde el video")
     logger.debug(f"Este es el video de entrada: {video_path}")
     extract_audio(video_path, wav_path, sr=16000)
     logger.info(f"Audio extraído de manera correcta: {wav_path}")
 
-    # 2) Transcribe
+    # 2) Transcribe (Usa Whisper)
     logger.info("Iniciando la transcripción del audio")
     logger.debug(f"Modelo Whisper: {whisper_model} | Idioma: {language}")
     tr = transcribe_audio(wav_path, model_size=whisper_model, language=language)
@@ -90,13 +90,14 @@ def run(
     logger.debug(f"Texto transcrito (longitud): {len(text_full)} caracteres")
     logger.info(f"Segmentos detectados: {len(segments)}")
 
-    # 3) Emotion from text (por segmento con timestamps)
+    # 3) Emotion from text (Optimizado: Cargamos el modelo FUERA del bucle)
     logger.info("Iniciando la parte de análisis emocional del texto (por segmento)")
     logger.warning(
         "El modelo de emociones utilizado está entrenado en inglés. "
         "Para mejores resultados en español se recomienda un modelo multilingüe."
     )
 
+    # MEJORA: Construimos el clasificador una sola vez para todos los segmentos
     clf = build_emotion_classifier()
 
     segments_with_emotions = []
@@ -105,6 +106,7 @@ def run(
         end = seg.get("end")
         seg_text = (seg.get("text") or "").strip()
 
+        # Usamos el clasificador ya cargado (mucho más rápido)
         emotions = predict_text_emotions(clf, seg_text)
 
         segments_with_emotions.append({
@@ -114,7 +116,7 @@ def run(
             "emotions": emotions,
         })
 
-    # SUMMARY GLOBAL (extra)
+    # SUMMARY GLOBAL
     emotion_accumulator = defaultdict(float)
     segment_count = 0
     duration_seconds = 0.0
@@ -137,7 +139,7 @@ def run(
         if emotion_distribution else None
     )
 
-    # JSON con estructura (incluye timestamps en cada segmento)
+    # Estructura del JSON final
     output = {
         "video": {
             "path": video_path,
@@ -146,7 +148,7 @@ def run(
         "transcription": {
             "language": tr.get("language"),
             "text": text_full,
-            "segments": segments_with_emotions,  # con timestamps + emociones
+            "segments": segments_with_emotions,
         },
         "summary": {
             "duration_seconds": round(duration_seconds, 2),
@@ -156,14 +158,11 @@ def run(
     }
 
     logger.info("Guardando resultados en archivo JSON")
-    logger.debug(f"Ruta del archivo JSON: {json_path}")
-
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     logger.info("Ejecución del pipeline finalizada correctamente")
 
-    #  Gráfica (extra)
     if make_plot:
         plot_emotions_over_time(segments_with_emotions)
 
@@ -171,6 +170,9 @@ def run(
 
 
 def main():
+    """
+    Función principal intacta según tu solicitud original.
+    """
     parser = argparse.ArgumentParser(description=" Audio -> Whisper -> Text Emotion")
     parser.add_argument("--video", required=True, help="Path to input interview video (.mp4/.avi)")
     parser.add_argument("--out", default="outputs/audio_text", help="Output directory")
@@ -193,7 +195,6 @@ def main():
     print("\n Ejecutado correctamente")
     print(f"Texto (primeros 200 chars): {result['transcription']['text'][:200]!r}")
 
-    # Top-3 emociones globales (del summary) — extra útil
     dist = result.get("summary", {}).get("emotion_distribution", {}) or {}
     top3 = sorted(dist.items(), key=lambda x: x[1], reverse=True)[:3]
     print("Top-3 emociones (global):", top3)

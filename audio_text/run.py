@@ -65,7 +65,7 @@ def run(
 
     outp = Path(out_dir)
     outp.mkdir(parents=True, exist_ok=True)
-
+    # cada uno tiene su propio JSON
     video_name = Path(video_path).stem
     run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
     wav_path = str(outp / f"{video_name}_{run_id}.wav")

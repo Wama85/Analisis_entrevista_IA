@@ -1,0 +1,125 @@
+from pathlib import Path
+import subprocess
+import logging
+import sys
+import argparse
+import os
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s"
+)
+
+logger = logging.getLogger(__name__)
+
+
+def run_command(cmd: list, descripcion: str):
+    logger.info(descripcion)
+    logger.debug(f"Comando: {' '.join(cmd)}")
+
+    result = subprocess.run(cmd, capture_output=True, text=True)
+
+    if result.returncode != 0:
+        logger.error(f"Error en: {descripcion}")
+        logger.error(result.stderr)
+        sys.exit(1)
+
+    logger.info(f"{descripcion} completado")
+
+
+def main(video_path: str):
+    video = Path(video_path)
+
+    if not video.exists():
+        logger.error(f"El video no existe: {video}")
+        sys.exit(1)
+
+    video_name = video.stem
+
+    logger.info("INICIANDO PIPELINE COMPLETO DE ANÁLISIS")
+    logger.info(f"Video: {video.name}")
+
+    # ===============================
+    # 1) Emociones faciales (CNN)
+    # ===============================
+    run_command(
+        [
+            "python", "-m", "cnn_emotions.facial_emotion",
+            "--video", str(video)
+        ],
+        "Análisis de emociones faciales (CNN)"
+    )
+
+    facial_json = Path("resultados_emociones/reports/emotion_analysis_report.json")
+
+    # ===============================
+    # 2) Audio → Texto + emociones
+    # ===============================
+    run_command(
+        [
+            "python", "-m", "audio_text.run",
+            "--video", str(video),
+            "--out", "outputs/audio_text",
+            "--lang", "es",
+            "--no_plot"
+        ],
+        "Análisis de emociones del texto (Whisper + NLP)"
+    )
+
+    audio_json = Path(f"outputs/audio_text/{video_name}_text_audio.json")
+
+    # ===============================
+    # 3) Sincronización multimodal
+    # ===============================
+    run_command(
+        [
+            "python", "Sync_emotion.py",
+            "--frames", str(facial_json),
+            "--audio", str(audio_json),
+            "--video", str(video),
+            "--out", "outputs/sync"
+        ],
+        "Sincronización de emociones (facial + texto)"
+    )
+
+    sync_json = Path("outputs/sync/synchronized_emotions.json")
+
+    # ===============================
+    # 4) Video final anotado
+    # ===============================
+    run_command(
+        [
+            "python", "create_video_with_text.py",
+            "--video", str(video),
+            "--sync_json", str(sync_json),
+            "--out", f"outputs/sync/{video_name}_final.mp4",
+            "--format", "mp4",
+            "--typing_speed", "0.03",
+            "--font_size", "28"
+        ],
+        "Generación del video final anotado"
+    )
+
+    logger.info("PIPELINE COMPLETO FINALIZADO")
+    logger.info(f"Video final generado en: outputs/sync/{video_name}_final.mp4")
+    # Abrir el video final automáticamente (Windows)
+    final_video = Path(f"outputs/sync/{video_name}_final.mp4")
+
+    if final_video.exists():
+        logger.info("Abriendo video final...")
+        os.startfile(final_video)
+    else:
+        logger.warning("No se encontró el video final para abrirlo.")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Pipeline completo de análisis de entrevistas (facial + texto)"
+    )
+    parser.add_argument(
+        "--video",
+        required=True,
+        help="Ruta al video de entrada"
+    )
+    args = parser.parse_args()
+
+    main(args.video)

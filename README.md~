@@ -3,6 +3,10 @@
 Proyecto desarrollado para la materia **Sistemas Inteligentes** – Universidad Católica Boliviana “San Pablo”.
 
 ---
+# Equipo de trabajo
+
+* **Estudiante 1**: [Wilner Mena Aguilar]
+* **Estudiante 2**: [Susan Cespedes Lazcano]
 
 ##  Descripción General
 
@@ -82,27 +86,28 @@ Sistema-Analisis-Entrevistas/
 │   └── facial_emotion.py
 │
 ├── audio_text/
-│   ├── transcripcion.py
+│   ├── extract_audio.py
+│   └── plot_emotions.py
+│   └── run.py
 │   └── text_emotion.py
+│   └── transcribe_whisper.py  
 │
-├── temporal_analysis/
-│   └── gru_analysis.py
-│
-├── utils/
-│   ├── video_utils.py
-│   ├── audio_utils.py
-│   └── logger.py
+├── plots/
+│   └── plot_sync.py
+├── reports/
+│   └── generate_insights.py
 │
 ├── outputs/
-│   ├── emotions.json
-│   └── visualizations/
-│
-├── notebooks/
-│   └── experiments.ipynb
+│   
 │
 ├── requirements.txt
 ├── README.md
 └── main.py
+└── api.py
+└── index.html
+└── Sync_emotion.py
+└── create_Video_with_text.py
+
 ```
 
 ---

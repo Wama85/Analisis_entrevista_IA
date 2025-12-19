@@ -3,6 +3,13 @@
 Proyecto desarrollado para la materia **Sistemas Inteligentes** – Universidad Católica Boliviana “San Pablo”.
 
 ---
+# Equipo de trabajo
+
+* **Estudiante 1**: [Wilner Mena Aguilar]
+* **Estudiante 2**: [Susan Cespedes Lazcano]
+* **Estudiante 3**: [Isabella Montes]
+* **Estudiante 4**: [Adriel Fenandez]
+
 
 ##  Descripción General
 

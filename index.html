@@ -2,46 +2,379 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emotion Analysis Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .emoji-icon {
+            font-size: 40px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .upload-section {
+            background-color: #f9fafc;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            border: 2px dashed #c3cfe2;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+        }
+
+        .upload-section:hover {
+            border-color: #4b6cb7;
+            background-color: #f0f4ff;
+        }
+
+        .upload-label {
+            display: block;
+            margin-bottom: 20px;
+            font-weight: 500;
+            color: #182848;
+            font-size: 18px;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .file-input-wrapper input[type="file"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .file-input-button {
+            background: linear-gradient(to right, #4b6cb7, #3a56a4);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(75, 108, 183, 0.3);
+            transition: all 0.3s;
+        }
+
+        .file-input-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(75, 108, 183, 0.4);
+        }
+
+        .file-name {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+            min-height: 20px;
+        }
+
+        .analyze-button {
+            background: linear-gradient(to right, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 300px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+        }
+
+        .analyze-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(76, 175, 80, 0.4);
+            background: linear-gradient(to right, #45a049, #3d8b40);
+        }
+
+        .analyze-button:active {
+            transform: translateY(0);
+        }
+
+        .analyze-button:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .output-section {
+            margin-top: 40px;
+        }
+
+        .output-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #182848;
+            font-size: 18px;
+        }
+
+        .output-container {
+            background-color: #f9fafc;
+            border-radius: 12px;
+            padding: 25px;
+            min-height: 200px;
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #e1e5eb;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            transition: all 0.3s;
+        }
+
+        .output-container.loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #4b6cb7;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #4b6cb7;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+            background-color: #f9fafc;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                border-radius: 12px;
+            }
+
+            .header {
+                padding: 20px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .upload-section {
+                padding: 20px;
+            }
+
+            .analyze-button {
+                padding: 15px 30px;
+            }
+        }
+
+        .emoji-grid {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .emoji-item {
+            font-size: 24px;
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+
+        .emoji-item:hover {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
+<div class="container">
+    <div class="header">
+        <h2>Análisis de Entrevista (Demo)</h2>
+        <p>Sube un video para analizar las emociones detectadas</p>
+        <div class="emoji-icon">😊</div>
+    </div>
 
-<h2>Análisis de Entrevista (Demo)</h2>
+    <div class="content">
+        <div class="upload-section">
+            <label class="upload-label">
+                <i class="fas fa-video"></i> Selecciona un archivo de video
+            </label>
 
-<input type="file" id="videoInput" accept="video/*" />
-<br><br>
-<button onclick="sendVideo()">Analizar video</button>
+            <div class="file-input-wrapper">
+                <input type="file" id="videoInput" accept="video/*" />
+                <div class="file-input-button">
+                    <i class="fas fa-cloud-upload-alt"></i> Elegir archivo de video
+                </div>
+            </div>
 
-<pre id="output"></pre>
+            <div class="file-name" id="fileName">No se ha seleccionado ningún archivo</div>
+
+            <div class="emoji-grid">
+                <div class="emoji-item">😊</div>
+                <div class="emoji-item">😢</div>
+                <div class="emoji-item">😠</div>
+                <div class="emoji-item">😮</div>
+                <div class="emoji-item">😐</div>
+            </div>
+        </div>
+
+        <button class="analyze-button" onclick="sendVideo()" id="analyzeButton">
+            <i class="fas fa-chart-bar"></i> Analizar Video
+        </button>
+
+        <div class="output-section">
+            <label class="output-label">
+                <i class="fas fa-poll"></i> Resultados del Análisis:
+            </label>
+            <div class="output-container" id="output">
+                Los resultados aparecerán aquí después del análisis
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Demo de análisis de emociones | Los resultados son generados por el servidor local</p>
+    </div>
+</div>
 
 <script>
+    // Actualizar el nombre del archivo seleccionado
+    document.getElementById('videoInput').addEventListener('change', function(e) {
+        const fileName = this.files.length ? this.files[0].name : 'No se ha seleccionado ningún archivo';
+        document.getElementById('fileName').textContent = fileName;
+    });
+
     async function sendVideo() {
-      const input = document.getElementById("videoInput");
-      const output = document.getElementById("output");
+        const input = document.getElementById("videoInput");
+        const output = document.getElementById("output");
+        const analyzeButton = document.getElementById("analyzeButton");
 
-      if (!input.files.length) {
-        alert("Selecciona un video");
-        return;
-      }
+        if (!input.files.length) {
+            alert("Por favor, selecciona un video antes de analizar");
+            return;
+        }
 
-      const formData = new FormData();
-      formData.append("file", input.files[0]);
+        // Cambiar el estado del botón y mostrar indicador de carga
+        analyzeButton.disabled = true;
+        analyzeButton.innerHTML = '<div class="loading-spinner" style="width:20px;height:20px;border-width:3px;"></div> Procesando...';
 
-      output.textContent = "Procesando video...";
+        // Mostrar estado de carga en el área de resultados
+        output.innerHTML = '<div class="loading-spinner"></div>Procesando video... Esto puede tardar unos momentos.';
+        output.classList.add('loading');
 
-      try {
-        const res = await fetch("http://127.0.0.1:8000/analyze", {
-          method: "POST",
-          body: formData
-        });
+        const formData = new FormData();
+        formData.append("file", input.files[0]);
 
-        const data = await res.json();
-        output.textContent = JSON.stringify(data, null, 2);
-      } catch (err) {
-        output.textContent = "Error: " + err;
-      }
+        try {
+            const res = await fetch("http://127.0.0.1:8000/analyze", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await res.json();
+
+            // Formatear el JSON para mejor legibilidad
+            const formattedData = JSON.stringify(data, null, 2)
+                .replace(/\n/g, '<br>')
+                .replace(/ /g, '&nbsp;');
+
+            output.innerHTML = formattedData;
+            output.classList.remove('loading');
+
+        } catch (err) {
+            output.innerHTML = `<span style="color: #d32f2f;">Error al conectar con el servidor:</span><br>${err}`;
+            output.classList.remove('loading');
+        } finally {
+            // Restaurar el botón a su estado original
+            analyzeButton.disabled = false;
+            analyzeButton.innerHTML = '<i class="fas fa-chart-bar"></i> Analizar Video';
+        }
     }
 </script>
-
 </body>
 </html>

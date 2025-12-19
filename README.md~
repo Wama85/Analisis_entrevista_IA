@@ -82,28 +82,27 @@ Sistema-Analisis-Entrevistas/
 │   └── facial_emotion.py
 │
 ├── audio_text/
-│   ├── extract_audio.py
-│   └── plot_emotions.py
-│   └── run.py
+│   ├── transcripcion.py
 │   └── text_emotion.py
-│   └── transcribe_whisper.py  
 │
-├── plots/
-│   └── plot_sync.py
-├── reports/
-│   └── generate_insights.py
+├── temporal_analysis/
+│   └── gru_analysis.py
+│
+├── utils/
+│   ├── video_utils.py
+│   ├── audio_utils.py
+│   └── logger.py
 │
 ├── outputs/
-│   
+│   ├── emotions.json
+│   └── visualizations/
+│
+├── notebooks/
+│   └── experiments.ipynb
 │
 ├── requirements.txt
 ├── README.md
 └── main.py
-└── api.py
-└── index.html
-└── Sync_emotion.py
-└── create_Video_with_text.py
-
 ```
 
 ---

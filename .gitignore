@@ -1,6 +1,8 @@
 .idea/
 outputs/
 outputs/*
+uploads/
+uploads/*
 */__pycache__/
 output_frames_dia1/
 resultados_emociones/

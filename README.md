@@ -232,3 +232,11 @@ Una vez que esté ejecutando la api, puedes ejecutar el index.html para subir v�
 ##  Licencia
 
 Este proyecto es de uso académico.
+
+
+## NOTA
+Para el mejor funcionamiento tienes que descargar  la libreria de ffmpeg
+El cual permite convertir el mp4 a wav.
+Descarga el archivo de https://www.ffmpeg.org/
+Copia el archivo en la unidad c.
+En variables del sistema crea la ruta  C:\ffmpeg\bin

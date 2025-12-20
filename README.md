@@ -206,8 +206,6 @@ El sistema permite:
 
 * Mejorar sincronización audio-video
 * Incorporar más métricas de congruencia
-* Desarrollar interfaz gráfica
-* Evaluar más modelos de emociones
 
 ---
 
@@ -224,6 +222,12 @@ El sistema permite:
 Proyecto desarrollado como **Práctica Integrada Avanzada** para la materia *Sistemas Inteligentes*.
 
 ---
+## Ejecución de live
+py sync/detection_realtime.py
+
+## Iniciar la api
+python -m uvicorn api:app --reload
+Una vez que esté ejecutando la api, puedes ejecutar el index.html para subir vídeo y crear la subtitulación.
 
 ##  Licencia
 
